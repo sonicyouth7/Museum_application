@@ -55,7 +55,6 @@
         android:id="@+id/my_joconde"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/joconde"
         android:layout_alignBottom="@+id/description"
         android:layout_marginStart="16dp"
         android:layout_marginTop="27dp"
@@ -63,7 +62,8 @@
         android:text="Description"
         android:textColor="#A99886"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:ignore="NotSibling" />
 
     <ImageButton
         android:id="@+id/play_button"
@@ -94,7 +94,7 @@
         android:text="Le célèbre sourire énigmatique de Mona Lisa ne cesse de séduire depuis des siècles. Un de ses premiers admirateurs fut le roi François Ier. Ce dernier, qui invite Léonard de Vinci en France, lui achète le tableau en 1518. C’est ainsi que l’œuvre est entrée dans les collections royales qui sont exposées au musée du Louvre depuis la Révolution."
         android:textAlignment="center"
         android:textColor="#A99886"
-        android:textSize="18sp"
+        android:textSize="18sp"/>
 
     <TextView
         android:id="@+id/text_next_to_play_button"
@@ -114,5 +114,5 @@
 
     />
 
-</LinearLayout>
+</RelativeLayout>
 
