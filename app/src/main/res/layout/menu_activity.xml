@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/imageProfil"
+        style="@style/Menu_button"
+        app:srcCompat="@drawable/home_icon"/>
+
+    <ImageButton
+        android:id="@+id/imageMessage"
+        style="@style/Menu_button"
+        app:srcCompat="@drawable/home_icon"
+        />
+
+    <ImageButton
+        android:id="@+id/imageLocation"
+        style="@style/Menu_button"
+        app:srcCompat="@drawable/home_icon" />
+
+    <ImageButton
+        android:id="@+id/imageSuggestion"
+        style="@style/Menu_button"
+        app:srcCompat="@drawable/home_icon"/>
+
+    <ImageButton
+        android:id="@+id/imageFavoris"
+        style="@style/Menu_button"
+        app:srcCompat="@drawable/home_icon"/>
+
+</LinearLayout>
+
