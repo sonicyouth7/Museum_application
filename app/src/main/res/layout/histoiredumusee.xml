@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Histoire du Musée"
+        android:textColor="#A99886"
+        android:textSize="23sp"
+        android:textStyle="bold"/>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/my_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_text_view"
+        android:layout_marginTop="17dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/Louvre"
+        app:riv_border_color="#A99886"
+        app:riv_border_width="3dp"
+        app:riv_corner_radius="10dp" />
+
+    <TextView
+        android:id="@+id/louvre_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/my_image_view"
+        android:layout_marginBottom="16dp"
+        android:text="Musée du Louvre"
+        android:textSize="17sp"
+        android:layout_marginStart="260dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/description_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/my_image_view"
+        android:layout_alignBottom="@+id/description"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="326dp"
+        android:text="Description"
+        android:textColor="#A99886"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/play_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_image_view"
+        android:layout_marginTop="67dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:paddingLeft="100dp"
+        android:src="@drawable/baseline_video_library_24"
+        android:text="video"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/video_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBaseline="@id/play_button"
+        android:layout_alignTop="@+id/my_image_view"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="295dp"
+        android:layout_marginBottom="346dp"
+        android:layout_toEndOf="@+id/play_button"
+        android:layout_toRightOf="@id/play_button"
+        android:gravity="center_vertical"
+        android:text="Visionner la vidéo"
+        android:textColor="#A99886"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/play_button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="80dp"
+        android:gravity="center_horizontal"
+        android:justificationMode="inter_word"
+        android:text="L'histoire du Louvre remonte au Moyen Âge, lorsque la forteresse du Louvre a été construite sous le règne de Philippe II. Au fil des siècles, le Louvre a été agrandi et rénové plusieurs fois, servant de résidence royale et de lieu d'exposition pour les œuvres d'art de la monarchie française. En 1793, le Louvre est devenu le Musée central des arts de la République [...]"
+        android:textAlignment="center"
+        android:textColor="#A99886"
+        android:textSize="18sp"
+
+        />

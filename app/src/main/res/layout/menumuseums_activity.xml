@@ -51,7 +51,10 @@
                     android:layout_height="wrap_content"
                     android:layout_alignTop="@id/OrsayButton1"
                     android:layout_alignRight="@id/OrsayButton1"
-                    android:layout_margin="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
                     android:visibility="visible" />
 
             </RelativeLayout>
@@ -76,7 +79,10 @@
                     android:layout_height="wrap_content"
                     android:layout_alignTop="@id/OrsayButton2"
                     android:layout_alignRight="@id/OrsayButton2"
-                    android:layout_margin="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
                     android:visibility="visible" />
 
             </RelativeLayout>

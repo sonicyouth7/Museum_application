@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Description de l'oeuvre"
+        android:textColor="#A99886"
+        android:textSize="23sp"
+        android:textStyle="bold"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="176dp"
+        android:layout_height="227dp"
+        android:layout_marginTop="55dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:id="@+id/joconde"
+            android:layout_width="166dp"
+            android:layout_height="219dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="200dp"
+            android:maxHeight="250dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/joconde" />
+    </androidx.cardview.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/add_image"
+        android:layout_width="149dp"
+        android:layout_height="239dp"
+        android:layout_above="@+id/text_next_to_play_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-176dp"
+        android:layout_marginEnd="46dp"
+        android:layout_marginBottom="64dp"
+        android:src="@drawable/leonardo"
+        />
+
+    <TextView
+        android:id="@+id/my_joconde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/joconde"
+        android:layout_alignBottom="@+id/description"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="312dp"
+        android:text="Description"
+        android:textColor="#A99886"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/play_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="286dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:paddingLeft="100dp"
+        android:src="@drawable/baseline_video_library_24"
+        android:text="video"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/play_button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="81dp"
+        android:gravity="center_horizontal"
+        android:justificationMode="inter_word"
+        android:text="Le célèbre sourire énigmatique de Mona Lisa ne cesse de séduire depuis des siècles. Un de ses premiers admirateurs fut le roi François Ier. Ce dernier, qui invite Léonard de Vinci en France, lui achète le tableau en 1518. C’est ainsi que l’œuvre est entrée dans les collections royales qui sont exposées au musée du Louvre depuis la Révolution."
+        android:textAlignment="center"
+        android:textColor="#A99886"
+        android:textSize="18sp"
+
+    <TextView
+        android:id="@+id/text_next_to_play_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/my_joconde"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="349dp"
+        android:text="Je visionne la vidéo"
+        android:textColor="#A99886"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    />
+
+</LinearLayout>
+
