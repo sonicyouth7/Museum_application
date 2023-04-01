@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -16,7 +17,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.225"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="37dp" />
+        tools:layout_editor_absoluteY="37dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView2"
@@ -27,7 +29,8 @@
         android:textColor="@color/black"
         android:textSize="30sp"
         tools:layout_editor_absoluteX="40dp"
-        tools:layout_editor_absoluteY="135dp" />
+        tools:layout_editor_absoluteY="135dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView3"
@@ -117,7 +120,8 @@
         android:textColor="@color/black"
         android:textSize="30sp"
         tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="384dp" />
+        tools:layout_editor_absoluteY="384dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView14"
@@ -184,7 +188,8 @@
         android:textColor="@color/black"
         android:textSize="30sp"
         tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="644dp" />
+        tools:layout_editor_absoluteY="644dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView17"
@@ -195,7 +200,8 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/textView16"
-        tools:layout_editor_absoluteY="733dp" />
+        tools:layout_editor_absoluteY="733dp"
+        tools:ignore="MissingConstraints" />
 
     <RatingBar
         android:id="@+id/ratingBar"
@@ -207,7 +213,8 @@
         android:progress="4"
         android:progressTint="@color/gris"
         app:layout_constraintStart_toEndOf="@+id/textView17"
-        tools:layout_editor_absoluteY="718dp" />
+        tools:layout_editor_absoluteY="718dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView18"
@@ -216,7 +223,8 @@
         android:text="Très beau musée, j'ai adoré !"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/textView17"
-        tools:layout_editor_absoluteY="790dp" />
+        tools:layout_editor_absoluteY="790dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView19"
@@ -226,7 +234,8 @@
         android:textSize="20sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="50dp"
-        tools:layout_editor_absoluteY="875dp" />
+        tools:layout_editor_absoluteY="875dp"
+        tools:ignore="MissingConstraints" />
 
     <RatingBar
         android:id="@+id/ratingBar2"
@@ -237,7 +246,8 @@
         android:progress="5"
         android:progressTint="@color/gris"
         app:layout_constraintStart_toEndOf="@+id/textView19"
-        tools:layout_editor_absoluteY="860dp" />
+        tools:layout_editor_absoluteY="860dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView20"
@@ -246,6 +256,7 @@
         android:text="Il y a tellement de choses à voir, je vais y revenir !"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/textView19"
-        tools:layout_editor_absoluteY="936dp" />
+        tools:layout_editor_absoluteY="936dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
