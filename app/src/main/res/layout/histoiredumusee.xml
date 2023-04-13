@@ -4,6 +4,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/imageProfil"
+            style="@style/Menu_button"
+            app:srcCompat="@drawable/home_icon" />
+
+        <ImageButton
+            android:id="@+id/imageMessage"
+            style="@style/Menu_button"
+            app:srcCompat="@drawable/home_icon" />
+
+        <ImageButton
+            android:id="@+id/imageLocation"
+            style="@style/Menu_button"
+            app:srcCompat="@drawable/home_icon" />
+
+        <ImageButton
+            android:id="@+id/imageSuggestion"
+            style="@style/Menu_button"
+            app:srcCompat="@drawable/home_icon" />
+
+        <ImageButton
+            android:id="@+id/imageFavoris"
+            style="@style/Menu_button"
+            app:srcCompat="@drawable/home_icon" />
+
+    </LinearLayout>
+
     <TextView
         android:id="@+id/title_text_view"
         android:layout_width="match_parent"
@@ -12,7 +45,7 @@
         android:layout_marginTop="16dp"
         android:gravity="center"
         android:text="Histoire du Musée"
-        android:textColor="#A99886"
+        android:textColor="#DA042B76"
         android:textSize="23sp"
         android:textStyle="bold" />
 
@@ -48,10 +81,10 @@
         android:layout_below="@+id/my_image_view"
         android:layout_alignBottom="@+id/description"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginBottom="292dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginBottom="297dp"
         android:text="Description"
-        android:textColor="#A99886"
+        android:textColor="#DA042B76"
         android:textSize="20sp"
         android:textStyle="bold" />
 
@@ -83,10 +116,10 @@
         android:layout_toRightOf="@id/play_button"
         android:gravity="center_vertical"
         android:text="Visionner la vidéo"
-        android:textColor="#A99886"
+        android:textColor="#DA042B76"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:onClick="openYoutubeVideo"/>
+        />
 
     <TextView
         android:id="@+id/description"
@@ -95,16 +128,15 @@
         android:layout_below="@id/play_button"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="82dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="78dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="75dp"
         android:gravity="center_horizontal"
         android:justificationMode="inter_word"
         android:text="L'histoire du Louvre remonte au Moyen Âge, lorsque la forteresse du Louvre a été construite sous le règne de Philippe II. Au fil des siècles, le Louvre a été agrandi et rénové plusieurs fois, servant de résidence royale et de lieu d'exposition pour les œuvres d'art de la monarchie française. En 1793, le Louvre est devenu le Musée central des arts de la République [...]"
         android:textAlignment="center"
-        android:textColor="#A99886"
-        android:textSize="18sp"
-        />
+        android:textColor="#DA042B76"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/leonard_name"
@@ -113,12 +145,12 @@
         android:layout_alignTop="@+id/my_image_view"
         android:layout_alignBottom="@+id/description"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="232dp"
+        android:layout_marginTop="225dp"
         android:layout_marginEnd="67dp"
-        android:layout_marginBottom="376dp"
+        android:layout_marginBottom="383dp"
         android:gravity="center"
         android:text="Musée du Louvre"
-        android:textColor="#A99886"
+        android:textColor="#DA042B76"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -128,12 +160,13 @@
         android:layout_height="41dp"
         android:layout_alignTop="@+id/my_image_view"
         android:layout_alignEnd="@+id/louvre_text"
-        android:layout_marginTop="248dp"
-        android:layout_marginEnd="87dp"
+        android:layout_marginTop="226dp"
+        android:layout_marginEnd="85dp"
         android:layout_marginBottom="73dp"
         android:gravity="center"
         android:text="10 août 1793"
-        android:textColor="#A99886"
+        android:textColor="#DA042B76"
         android:textSize="20sp"
         android:textStyle="italic" />
+
 </RelativeLayout>
