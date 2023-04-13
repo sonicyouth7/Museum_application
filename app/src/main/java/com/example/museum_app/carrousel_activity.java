@@ -17,7 +17,6 @@ public class carrousel_activity extends AppCompatActivity {
 
     private ImageButton dislike_tableau1, dislike_tableau2, dislike_statue1, dislike_statue2;
 
-    @Override
     protected void carrousel(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.carrousel_activity);
@@ -125,4 +124,5 @@ public class carrousel_activity extends AppCompatActivity {
                 });
             }
         });
+    }
 }
