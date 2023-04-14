@@ -29,4 +29,10 @@
         <item name="android:background">@color/backgroundcolor</item>
 
     </style>
+
+    <style name="roundimage" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">80dp</item>
+        <item name="color">@color/marronclair</item>
+    </style>
 </resources>

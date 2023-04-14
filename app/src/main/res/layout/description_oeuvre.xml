@@ -6,6 +6,39 @@
     android:layout_height="match_parent"
     android:orientation="horizontal">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/imageProfil"
+            style="@style/Menu_button"
+            app:srcCompat="@drawable/home_icon" />
+
+        <ImageButton
+            android:id="@+id/imageMessage"
+            style="@style/Menu_button"
+            app:srcCompat="@drawable/home_icon" />
+
+        <ImageButton
+            android:id="@+id/imageLocation"
+            style="@style/Menu_button"
+            app:srcCompat="@drawable/home_icon" />
+
+        <ImageButton
+            android:id="@+id/imageSuggestion"
+            style="@style/Menu_button"
+            app:srcCompat="@drawable/home_icon" />
+
+        <ImageButton
+            android:id="@+id/imageFavoris"
+            style="@style/Menu_button"
+            app:srcCompat="@drawable/home_icon" />
+
+    </LinearLayout>
+
     <TextView
         android:id="@+id/title"
         android:layout_width="match_parent"
@@ -15,7 +48,7 @@
         android:layout_marginTop="16dp"
         android:gravity="center"
         android:text="Description de l'oeuvre"
-        android:textColor="#A99886"
+        android:textColor="#DA042B76"
         android:textSize="23sp"
         android:textStyle="bold"/>
 
@@ -29,27 +62,28 @@
 
         <ImageView
             android:id="@+id/joconde"
-            android:layout_width="166dp"
-            android:layout_height="219dp"
+            android:layout_width="161dp"
+            android:layout_height="227dp"
             android:adjustViewBounds="true"
             android:maxWidth="200dp"
             android:maxHeight="250dp"
             android:scaleType="centerCrop"
             android:src="@drawable/joconde" />
+
     </androidx.cardview.widget.CardView>
 
-
-    <ImageView
-        android:id="@+id/add_image"
-        android:layout_width="149dp"
-        android:layout_height="239dp"
-        android:layout_above="@+id/text_next_to_play_button"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="-176dp"
-        android:layout_marginEnd="46dp"
-        android:layout_marginBottom="64dp"
-        android:src="@drawable/leonardo"
-        />
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="179dp"
+        android:layout_height="200dp"
+        android:layout_alignEnd="@+id/leonardo_dates"
+        android:layout_alignBottom="@+id/leonardo_dates"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="63dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/leonard"
+        app:shapeAppearanceOverlay="@style/roundimage" />
 
     <TextView
         android:id="@+id/my_joconde"
@@ -58,9 +92,9 @@
         android:layout_alignBottom="@+id/description"
         android:layout_marginStart="16dp"
         android:layout_marginTop="27dp"
-        android:layout_marginBottom="312dp"
+        android:layout_marginBottom="280dp"
         android:text="Description"
-        android:textColor="#A99886"
+        android:textColor="#DA042B76"
         android:textSize="20sp"
         android:textStyle="bold"
         tools:ignore="NotSibling" />
@@ -70,8 +104,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="360dp"
-        android:layout_marginEnd="286dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginEnd="290dp"
         android:background="@android:color/transparent"
         android:clickable="true"
         android:paddingLeft="100dp"
@@ -79,22 +113,23 @@
         android:text="video"
         tools:ignore="TouchTargetSizeCheck" />
 
+
     <TextView
         android:id="@+id/description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/play_button"
+        android:layout_below="@+id/title"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="79dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="81dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="372dp"
+        android:layout_marginEnd="75dp"
         android:gravity="center_horizontal"
         android:justificationMode="inter_word"
         android:text="Le célèbre sourire énigmatique de Mona Lisa ne cesse de séduire depuis des siècles. Un de ses premiers admirateurs fut le roi François Ier. Ce dernier, qui invite Léonard de Vinci en France, lui achète le tableau en 1518. C’est ainsi que l’œuvre est entrée dans les collections royales qui sont exposées au musée du Louvre depuis la Révolution."
         android:textAlignment="center"
-        android:textColor="#A99886"
-        android:textSize="18sp"/>
+        android:textColor="#DA042B76"
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/text_next_to_play_button"
@@ -105,14 +140,70 @@
         android:layout_alignParentBottom="true"
         android:layout_gravity="center_vertical"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="106dp"
-        android:layout_marginBottom="349dp"
-        android:text="Je visionne la vidéo"
-        android:textColor="#A99886"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="328dp"
+        android:text="Ecouter l'audio"
+        android:textColor="#DA042B76"
         android:textSize="18sp"
         android:textStyle="bold" />
 
-    />
+    <TextView
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/description"
+        android:layout_below="@+id/title"
+        android:layout_alignEnd="@+id/text_next_to_play_button"
+        android:layout_alignBottom="@+id/description"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginTop="225dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="355dp"
+        android:text="La Joconde"
+        android:textColor="#DA042B76"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/text_next_to_play_button"
+        android:layout_alignBottom="@+id/description"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="333dp"
+        android:text="1503"
+        android:textColor="#DA042B76"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/leonard_name"
+        android:layout_width="280dp"
+        android:layout_height="32dp"
+        android:layout_alignEnd="@+id/leonardo_dates"
+        android:layout_alignBottom="@+id/description"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="-45dp"
+        android:layout_marginBottom="349dp"
+        android:gravity="center"
+        android:text="Léonard de Vinci"
+        android:textColor="#DA042B76"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/leonardo_dates"
+        android:layout_width="195dp"
+        android:layout_height="41dp"
+        android:layout_above="@+id/text_next_to_play_button"
+        android:layout_alignEnd="@+id/text_next_to_play_button"
+        android:layout_marginEnd="-155dp"
+        android:layout_marginBottom="45dp"
+        android:gravity="center"
+        android:text="(1452 - 1519)"
+        android:textColor="#DA042B76"
+        android:textSize="20sp"
+        android:textStyle="italic" />
 
 </RelativeLayout>
 
