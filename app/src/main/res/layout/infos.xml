@@ -214,6 +214,5 @@
             android:id="@+id/imageFavoris"
             style="@style/Menu_button"
             app:srcCompat="@drawable/home_icon" />
-
     </LinearLayout>
  </androidx.constraintlayout.widget.ConstraintLayout>
