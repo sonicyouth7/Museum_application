@@ -90,7 +90,7 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/Heures_vendredi"
         app:layout_constraintTop_toBottomOf="@+id/Heures_vendredi"
-        app:layout_constraintTop_toEndOf="@+id/Heures_vendredi" />
+        />
 
     <TextView
         android:id="@+id/Ferme_mardi"
