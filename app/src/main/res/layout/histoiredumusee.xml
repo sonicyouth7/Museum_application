@@ -87,6 +87,7 @@
         android:textColor="#DA042B76"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:clickable="true"
         />
 
     <TextView
