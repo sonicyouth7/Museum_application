@@ -25,14 +25,13 @@
         android:id="@+id/horaires_container"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="72dp"
         android:background="@drawable/rectangle_with_shadow"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="73dp">
 
         <TextView
             android:id="@+id/Horaires"
@@ -124,12 +123,11 @@
         android:id="@+id/tarifs_container"
         android:layout_width="373dp"
         android:layout_height="224dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginBottom="96dp"
         android:background="@drawable/rectangle_with_shadow"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/horaires_container"
+        app:layout_constraintBottom_toTopOf="@+id/include"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.342"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints">
 
@@ -219,8 +217,6 @@
             tools:layout_editor_absoluteY="421dp" />
 
     </LinearLayout>
-
-</LinearLayout>
 
     <include
         android:id="@+id/include"
