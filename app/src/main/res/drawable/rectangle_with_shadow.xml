@@ -12,12 +12,12 @@
 
     <stroke
         android:width="1dp"
-        android:color="#BDBDBD"/> <!-- Couleur et épaisseur du contour du rectangle -->
+        android:color="#A99886"/> <!-- Couleur et épaisseur du contour du rectangle -->
 
     <gradient
         android:angle="135"
         android:endColor="#E0E0E0"
         android:centerColor="#FFFFFF"
-        android:startColor="#FFFFFF"
+        android:startColor="#A99886"
         android:type="linear"/> <!-- Dégradé pour donner un effet d'ombre -->
 </shape>

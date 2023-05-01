@@ -21,17 +21,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/horaires_container"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/rectangle_with_shadow"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="73dp">
 
         <TextView
             android:id="@+id/Horaires"
@@ -46,6 +35,18 @@
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteY="84dp" />
+
+    <LinearLayout
+        android:id="@+id/horaires_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_with_shadow"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="122dp">
 
         <TextView
             android:id="@+id/Heures_norm"
@@ -76,7 +77,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:text="9h - 21h45"
+            android:text="  9h - 21h45"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/Heures_norm"
@@ -119,28 +120,33 @@
 
     </LinearLayout>
 
+
+    <TextView
+        android:id="@+id/Tarifs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="312dp"
+        android:text="Tarifs"
+        android:textAllCaps="true"
+        android:textColor="#DA042B76"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tarifs_container"
+        app:layout_constraintEnd_toEndOf="@+id/tarifs_container"
+        app:layout_constraintTop_toBottomOf="@+id/Horaires"
+        app:layout_constraintVertical_bias="0.946" />
+
     <LinearLayout
         android:id="@+id/tarifs_container"
         android:layout_width="373dp"
         android:layout_height="224dp"
-        android:layout_marginBottom="96dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/rectangle_with_shadow"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/include"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints">
-
-        <TextView
-            android:id="@+id/Tarifs"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:text="Tarifs"
-            android:textAllCaps="true"
-            android:textColor="#DA042B76"
-            android:textSize="20sp"
-            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/Tarifs_online"
@@ -159,9 +165,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
-            android:autoLink="web"
-            android:text="Réservez maintenant votre billet"
+            android:text="@string/reserve_now"
+            android:textStyle="italic"
             android:textSize="18sp"
+            android:textColorLink="#DA042B76"
             app:layout_constraintBottom_toBottomOf="@+id/Tarifs_online"
             app:layout_constraintStart_toEndOf="@+id/Tarifs_online"
             app:layout_constraintTop_toTopOf="@+id/Tarifs_online"

@@ -67,6 +67,7 @@
         android:textStyle="bold"
         tools:ignore="NotSibling" />
 
+
     <ImageButton
         android:id="@+id/play_button"
         android:layout_width="wrap_content"
