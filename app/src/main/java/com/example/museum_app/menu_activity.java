@@ -7,7 +7,7 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Menu_activity extends AppCompatActivity {
+public class menu_activity extends AppCompatActivity {
     private ImageButton btnProfil, btnMessage, btnLocation, btnSuggestion, btnFavoris;
 
     @Override
