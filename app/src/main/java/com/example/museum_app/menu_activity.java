@@ -24,7 +24,7 @@ public class menu_activity extends AppCompatActivity {
         btnProfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Menu_activity.this, menu_general.class);
+                Intent intent = new Intent(menu_activity.this, menu_general.class);
                 startActivity(intent);
             }
         });
@@ -32,23 +32,7 @@ public class menu_activity extends AppCompatActivity {
         btnMessage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Menu_activity.this, MessageActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        btnLocation.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Menu_activity.this, LocationActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        btnSuggestion.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Menu_activity.this, SuggestionActivity.class);
+                Intent intent = new Intent(menu_activity.this, histoiremusee.class);
                 startActivity(intent);
             }
         });
@@ -56,7 +40,23 @@ public class menu_activity extends AppCompatActivity {
         btnFavoris.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Menu_activity.this, FavorisActivity.class);
+                Intent intent = new Intent(menu_activity.this, carrousel_activity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnSuggestion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(menu_activity.this, infos_activity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnLocation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(menu_activity.this, map_activity.class);
                 startActivity(intent);
             }
         });

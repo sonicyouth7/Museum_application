@@ -17,7 +17,7 @@ public class menu_general extends AppCompatActivity {
         boutonHistoire.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), com.example.yourapplication.histoiredumusee.class);
+                Intent intent = new Intent(getApplicationContext(), histoiremusee.class);
                 startActivity(intent);
             }
         });
@@ -35,7 +35,7 @@ public class menu_general extends AppCompatActivity {
         boutonLocalisation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), MapActivity.class);
+                Intent intent = new Intent(getApplicationContext(), map_activity.class);
                 startActivity(intent);
             }
         });
