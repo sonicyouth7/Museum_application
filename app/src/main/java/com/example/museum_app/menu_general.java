@@ -17,7 +17,7 @@ public class menu_general extends AppCompatActivity {
         boutonHistoire.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), histoiredumusee.class);
+                Intent intent = new Intent(getApplicationContext(), com.example.yourapplication.histoiredumusee.class);
                 startActivity(intent);
             }
         });
