@@ -30,6 +30,9 @@
             android:name=".menu_general"
             android:exported="false"/>
         <activity
+            android:name=".map_activity"
+            android:exported="false"/>
+        <activity
             android:name=".menumuseums_activity"
             android:exported="false"/>
         <activity
