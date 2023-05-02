@@ -8,182 +8,225 @@
     android:orientation="horizontal">
 
     <TextView
-        android:id="@+id/Infos"
-        android:layout_width="wrap_content"
+        android:id="@+id/title"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:text="INFOS"
-        android:textColor="@color/black"
-        android:textSize="32sp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Informations"
+        android:textColor="#DA042B76"
+        android:textSize="23sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/Horaires"
+
+        <TextView
+            android:id="@+id/Horaires"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Horaires"
+            android:textAllCaps="true"
+            android:textColor="#DA042B76"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="84dp" />
+
+    <LinearLayout
+        android:id="@+id/horaires_container"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:text="Horaires"
-        android:textAllCaps="true"
-        android:textColor="@color/black"
-        android:textSize="30sp"
+        android:background="@drawable/rectangle_with_shadow"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="157dp" />
-    <TextView
-        android:id="@+id/Heures_norm"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="24dp"
-        android:text="9h - 18h"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/Horaires"
-        app:layout_constraintTop_toBottomOf="@+id/Horaires" />
+        tools:layout_editor_absoluteY="122dp">
 
-    <TextView
-        android:id="@+id/Jours_norm"
-        android:layout_width="281dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="Lundi, mercredi, jeudi, samedi et dimanche"
-        android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/Heures_norm"
-        tools:layout_editor_absoluteY="221dp"
-        tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/Heures_norm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="9h - 18h"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/Horaires"
+            app:layout_constraintTop_toBottomOf="@+id/Horaires" />
 
-    <TextView
-        android:id="@+id/Heures_vendredi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="9h - 21h45"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/Heures_norm"
-        app:layout_constraintTop_toBottomOf="@+id/Heures_norm"
-        tools:ignore="UnknownId" />
+        <TextView
+            android:id="@+id/Jours_norm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Lundi, mercredi, jeudi, samedi et dimanche"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/Heures_norm"
+            app:layout_constraintStart_toEndOf="@+id/Heures_norm"
+            app:layout_constraintTop_toTopOf="@+id/Heures_norm"
+            tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/Vendredi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="Vendredi"
-        android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/Heures_vendredi"
-        tools:layout_editor_absoluteY="277dp"
-        tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/Heures_vendredi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="  9h - 21h45"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/Heures_norm"
+            app:layout_constraintTop_toBottomOf="@+id/Heures_norm"
+            tools:ignore="UnknownId" />
 
-    <TextView
-        android:id="@+id/Fermeture"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="FERMETURE"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/Heures_vendredi"
-        app:layout_constraintTop_toBottomOf="@+id/Heures_vendredi"
-        />
+        <TextView
+            android:id="@+id/Ferme_mardi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="Mardi"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/Fermeture"
+            app:layout_constraintStart_toEndOf="@+id/Fermeture"
+            app:layout_constraintTop_toTopOf="@+id/Fermeture"
+            app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/Ferme_mardi"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="Mardi"
-        android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/Fermeture"
-        app:layout_constraintTop_toTopOf="@+id/Fermeture" />
+        <TextView
+            android:id="@+id/Fermeture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="FERMETURE"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/Heures_vendredi"
+            app:layout_constraintTop_toBottomOf="@+id/Heures_vendredi" />
+
+        <TextView
+            android:id="@+id/Vendredi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:text="Vendredi"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/Heures_vendredi"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="198dp" />
+
+    </LinearLayout>
+
 
     <TextView
         android:id="@+id/Tarifs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginEnd="312dp"
         android:text="Tarifs"
         android:textAllCaps="true"
-        android:textColor="@color/black"
-        android:textSize="30sp"
+        android:textColor="#DA042B76"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tarifs_container"
+        app:layout_constraintEnd_toEndOf="@+id/tarifs_container"
+        app:layout_constraintTop_toBottomOf="@+id/Horaires"
+        app:layout_constraintVertical_bias="0.946" />
+
+    <LinearLayout
+        android:id="@+id/tarifs_container"
+        android:layout_width="373dp"
+        android:layout_height="224dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rectangle_with_shadow"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/include"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="445dp" />
+        tools:ignore="MissingConstraints">
 
-    <TextView
-        android:id="@+id/Tarifs_online"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="17 €"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="511dp"
-        tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/Tarifs_online"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15 €"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="469dp" />
 
-    <TextView
-        android:id="@+id/Lien_web"
-        android:layout_width="281dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:autoLink="web"
-        android:text="Réservez maintenant votre billet"
-        android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/Tarifs_online"
-        tools:layout_editor_absoluteY="514dp"
-        tools:ignore="MissingConstraints" />
+        <TextView
+            android:id="@+id/Lien_web"
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/reserve_now"
+            android:textStyle="italic"
+            android:textSize="18sp"
+            android:textColorLink="#DA042B76"
+            app:layout_constraintBottom_toBottomOf="@+id/Tarifs_online"
+            app:layout_constraintStart_toEndOf="@+id/Tarifs_online"
+            app:layout_constraintTop_toTopOf="@+id/Tarifs_online"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="MissingConstraints" />
 
+        <TextView
+            android:id="@+id/Tarifs_sur_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:text="17 €"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/Tarifs_online"
+            tools:layout_editor_absoluteY="567dp" />
 
-    <TextView
-        android:id="@+id/Tarifs_sur_place"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="15 €"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/Tarifs_online"
-        tools:layout_editor_absoluteY="574dp"
-        tools:ignore="MissingConstraints,UnknownId" />
+        <TextView
+            android:id="@+id/Tarifs_ligne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Tarif sur place"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/Tarifs_sur_place"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="445dp" />
 
+        <TextView
+            android:id="@+id/Gratuit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="20dp"
+            android:text="GRATUIT"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/Tarifs_sur_place"
+            app:layout_constraintTop_toBottomOf="@+id/Tarifs_sur_place" />
 
-    <TextView
-        android:id="@+id/Tarifs_ligne"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="Tarif sur place"
-        android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/Tarifs_sur_place"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="576dp" />
+        <TextView
+            android:id="@+id/Moins_de_26_ans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="de - 18 ans à 26 ans"
+            android:textSize="18dp"
+            app:layout_constraintStart_toEndOf="@+id/Gratuit"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="421dp" />
 
-    <TextView
-        android:id="@+id/Gratuit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="GRATUIT"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/Tarifs_sur_place"
-        app:layout_constraintTop_toBottomOf="@+id/Tarifs_sur_place" />
-
-    <TextView
-        android:id="@+id/Moins_de_26_ans"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="Moins de 26 ans"
-        android:textSize="20sp"
-        app:layout_constraintStart_toEndOf="@+id/Gratuit"
-        tools:layout_editor_absoluteY="619dp"
-        tools:ignore="MissingConstraints" />
+    </LinearLayout>
 
     <include
+        android:id="@+id/include"
         layout="@layout/menu_activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

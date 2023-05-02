@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#DA042B76"/>
+
+    <corners android:radius="4dp"/>
+
+    <padding
+        android:left="10dp"
+        android:top="10dp"
+        android:right="10dp"
+        android:bottom="10dp"/>
+
+    <stroke
+        android:width="1dp"
+        android:color="#A99886"/> <!-- Couleur et épaisseur du contour du rectangle -->
+
+    <gradient
+        android:angle="135"
+        android:endColor="#E0E0E0"
+        android:centerColor="#FFFFFF"
+        android:startColor="#A99886"
+        android:type="linear"/> <!-- Dégradé pour donner un effet d'ombre -->
+</shape>

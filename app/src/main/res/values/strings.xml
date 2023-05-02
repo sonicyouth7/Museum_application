@@ -6,4 +6,6 @@
     <string name="password">Password</string>
     <string name="login">LOGIN</string>
     <string name="protection_RGPD">We will not collect or store any personal information related to your account.</string>
+    <string name="reserve_now">Réservez maintenant votre billet</string>
+    <string name="reserve_now_link">https://www.ticketlouvre.fr/louvre/b2c/index.cfm/home</string>
 </resources>
