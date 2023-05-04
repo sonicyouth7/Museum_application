@@ -9,16 +9,14 @@
 
     <TextView
         android:id="@+id/title"
+        style="@style/Museum_app_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="0dp"
         android:gravity="center"
-        android:text="Description de l'oeuvre"
-        android:textColor="#DA042B76"
-        android:textSize="23sp"
-        android:textStyle="bold"/>
+        android:text="Description de l'oeuvre" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="176dp"
@@ -53,6 +51,7 @@
         android:src="@drawable/leonard"
         app:shapeAppearanceOverlay="@style/roundimage" />
 
+
     <TextView
         android:id="@+id/my_joconde"
         android:layout_width="match_parent"
@@ -60,13 +59,12 @@
         android:layout_alignBottom="@+id/description"
         android:layout_marginStart="16dp"
         android:layout_marginTop="27dp"
-        android:layout_marginBottom="280dp"
+        android:layout_marginBottom="258dp"
         android:text="Description"
         android:textColor="#DA042B76"
         android:textSize="20sp"
         android:textStyle="bold"
         tools:ignore="NotSibling" />
-
 
     <ImageButton
         android:id="@+id/play_button"
@@ -79,8 +77,8 @@
         android:clickable="true"
         android:paddingLeft="100dp"
         android:src="@drawable/baseline_video_library_24"
-        android:text="video"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="TouchTargetSizeCheck"
+        android:focusable="true" />
 
 
     <TextView
@@ -125,9 +123,9 @@
         android:layout_alignEnd="@+id/text_next_to_play_button"
         android:layout_alignBottom="@+id/description"
         android:layout_gravity="center_horizontal|bottom"
-        android:layout_marginTop="225dp"
-        android:layout_marginEnd="71dp"
-        android:layout_marginBottom="355dp"
+        android:layout_marginTop="251dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginBottom="329dp"
         android:text="La Joconde"
         android:textColor="#DA042B76"
         android:textSize="18sp"
@@ -140,7 +138,7 @@
         android:layout_alignBottom="@+id/description"
         android:layout_gravity="center_horizontal|bottom"
         android:layout_marginEnd="148dp"
-        android:layout_marginBottom="333dp"
+        android:layout_marginBottom="309dp"
         android:text="1503"
         android:textColor="#DA042B76"
         android:textSize="20sp"
@@ -153,8 +151,8 @@
         android:layout_alignEnd="@+id/leonardo_dates"
         android:layout_alignBottom="@+id/description"
         android:layout_marginTop="192dp"
-        android:layout_marginEnd="-45dp"
-        android:layout_marginBottom="349dp"
+        android:layout_marginEnd="-41dp"
+        android:layout_marginBottom="327dp"
         android:gravity="center"
         android:text="Léonard de Vinci"
         android:textColor="#DA042B76"
@@ -180,7 +178,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/description"
-        android:layout_marginBottom="-83dp"
+        android:layout_marginBottom="-100dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

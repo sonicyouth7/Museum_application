@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".carrousel_activity">
+    tools:context=".CarrouselActivity">
 
         <TextView
             android:id="@+id/presentation_oeuvres"
@@ -14,11 +14,6 @@
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif"
             android:text="Présentation des oeuvres"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textIsSelectable="false"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -27,7 +22,7 @@
         android:id="@+id/tableau"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="60dp"
         android:fontFamily="sans-serif"
         android:text="Tableau"
         android:textAlignment="center"
@@ -37,7 +32,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-        <HorizontalScrollView
+    <HorizontalScrollView
             android:id="@+id/tableau_horizontalscroll"
             android:layout_width="409dp"
             android:layout_height="206dp"
@@ -309,22 +304,21 @@
         </HorizontalScrollView>
 
 
-        <TextView
-            android:id="@+id/statue"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
-            android:fontFamily="sans-serif"
-            android:text="Statue"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/tableau"
-            app:layout_constraintTop_toBottomOf="@+id/tableau_horizontalscroll" />
+    <TextView
+        android:id="@+id/statue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:fontFamily="sans-serif"
+        android:text="Statue"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tableau"
+        app:layout_constraintTop_toBottomOf="@+id/tableau_horizontalscroll" />
 
-
-        <HorizontalScrollView
+    <HorizontalScrollView
             android:id="@+id/statue_horizontalscroll"
             android:layout_width="409dp"
             android:layout_height="206dp"
@@ -597,6 +591,15 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </HorizontalScrollView>
+
+    <include
+        layout="@layout/menu_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

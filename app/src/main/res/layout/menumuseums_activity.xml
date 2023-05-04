@@ -5,22 +5,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <TextView
         android:id="@+id/MuseumMenu"
         style="@style/Museum_app_text"
-        android:layout_width="match_parent"
-        android:layout_height="27dp"
-        android:layout_marginTop="0dp"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
         android:text="Liste des musées"
         android:textIsSelectable="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <RelativeLayout
+        android:layout_width="43dp"
+        android:layout_height="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="-1dp"
+            android:background="@color/backgroundcolor"
+            android:padding="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/arrow_icon" />
+
+    </RelativeLayout>
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="409dp"
         android:layout_height="729dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/MuseumMenu">
@@ -38,23 +61,25 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/OrsayButton1"
-                    android:layout_width="300dp"
+                    android:id="@+id/LouvreButton"
+                    android:layout_width="360dp"
                     android:layout_height="175dp"
-                    android:contentDescription="Musée d'Orsay"
+                    android:contentDescription="Musée Louvre"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/louvre_login" />
+                    android:src="@drawable/louvre_login"
+                    android:layout_marginBottom="16dp"/>
 
                 <CheckBox
                     android:id="@+id/checkBox1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignTop="@id/OrsayButton1"
-                    android:layout_alignRight="@id/OrsayButton1"
+                    android:layout_alignTop="@id/LouvreButton"
+                    android:layout_alignRight="@id/LouvreButton"
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
                     android:layout_marginBottom="5dp"
+                    android:buttonTint="#FFFFFF"
                     android:visibility="visible" />
 
             </RelativeLayout>
@@ -66,23 +91,25 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/OrsayButton2"
-                    android:layout_width="300dp"
+                    android:id="@+id/OrsayButton"
+                    android:layout_width="360dp"
                     android:layout_height="175dp"
                     android:contentDescription="Musée d'Orsay"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/louvre_login" />
+                    android:src="@drawable/orsay"
+                    android:layout_marginBottom="16dp"/>
 
                 <CheckBox
                     android:id="@+id/checkBox2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignTop="@id/OrsayButton2"
-                    android:layout_alignRight="@id/OrsayButton2"
+                    android:layout_alignTop="@id/OrsayButton"
+                    android:layout_alignRight="@id/OrsayButton"
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
                     android:layout_marginBottom="5dp"
+                    android:buttonTint="#FFFFFF"
                     android:visibility="visible" />
 
             </RelativeLayout>
@@ -94,20 +121,22 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/OrsayButton3"
-                    android:layout_width="300dp"
+                    android:id="@+id/PetitPalais"
+                    android:layout_width="360dp"
                     android:layout_height="175dp"
-                    android:contentDescription="Musée d'Orsay"
+                    android:contentDescription="Petit Palais"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/louvre_login" />
+                    android:src="@drawable/petit_palais"
+                    android:layout_marginBottom="16dp"/>
 
                 <CheckBox
                     android:id="@+id/checkBox3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignTop="@id/OrsayButton3"
-                    android:layout_alignRight="@id/OrsayButton3"
+                    android:layout_alignTop="@id/PetitPalais"
+                    android:layout_alignRight="@id/PetitPalais"
                     android:layout_margin="5dp"
+                    android:buttonTint="#FFFFFF"
                     android:visibility="visible" />
 
             </RelativeLayout>
@@ -119,20 +148,22 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/OrsayButton4"
-                    android:layout_width="300dp"
+                    android:id="@+id/CiteScience"
+                    android:layout_width="360dp"
                     android:layout_height="175dp"
-                    android:contentDescription="Musée d'Orsay"
+                    android:contentDescription="Cité de Science"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/louvre_login" />
+                    android:src="@drawable/cite_science_parc"
+                    android:layout_marginBottom="16dp"/>
 
                 <CheckBox
                     android:id="@+id/checkBox4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignTop="@id/OrsayButton4"
-                    android:layout_alignRight="@id/OrsayButton4"
+                    android:layout_alignTop="@id/CiteScience"
+                    android:layout_alignRight="@id/CiteScience"
                     android:layout_margin="5dp"
+                    android:buttonTint="#FFFFFF"
                     android:visibility="visible" />
 
             </RelativeLayout>
@@ -144,20 +175,22 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/OrsayButton5"
-                    android:layout_width="300dp"
+                    android:id="@+id/Pinault"
+                    android:layout_width="360dp"
                     android:layout_height="175dp"
-                    android:contentDescription="Musée d'Orsay"
+                    android:contentDescription="Musée Pinault"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/louvre_login" />
+                    android:src="@drawable/pinault_museum"
+                    android:layout_marginBottom="16dp"/>
 
                 <CheckBox
                     android:id="@+id/checkBox5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignTop="@id/OrsayButton5"
-                    android:layout_alignRight="@id/OrsayButton5"
+                    android:layout_alignTop="@id/Pinault"
+                    android:layout_alignRight="@id/Pinault"
                     android:layout_margin="5dp"
+                    android:buttonTint="#FFFFFF"
                     android:visibility="visible" />
 
             </RelativeLayout>
@@ -169,20 +202,22 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/OrsayButton6"
-                    android:layout_width="300dp"
+                    android:id="@+id/Pompidou"
+                    android:layout_width="360dp"
                     android:layout_height="175dp"
-                    android:contentDescription="Musée d'Orsay"
+                    android:contentDescription="Musée Pompidou"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/louvre_login" />
+                    android:src="@drawable/pompidou"
+                    android:layout_marginBottom="16dp"/>
 
                 <CheckBox
                     android:id="@+id/checkBox6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignTop="@id/OrsayButton6"
-                    android:layout_alignRight="@id/OrsayButton6"
+                    android:layout_alignTop="@id/Pompidou"
+                    android:layout_alignRight="@id/Pompidou"
                     android:layout_margin="5dp"
+                    android:buttonTint="#FFFFFF"
                     android:visibility="visible" />
 
             </RelativeLayout>
@@ -194,23 +229,26 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/OrsayButton7"
-                    android:layout_width="300dp"
+                    android:id="@+id/histoiremuseum"
+                    android:layout_width="360dp"
                     android:layout_height="175dp"
-                    android:contentDescription="Musée d'Orsay"
+                    android:contentDescription="Musée d'Histoire"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/louvre_login" />
+                    android:src="@drawable/histoire_museum"
+                    android:layout_marginBottom="16dp"/>
 
                 <CheckBox
                     android:id="@+id/checkBox7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignTop="@id/OrsayButton7"
-                    android:layout_alignRight="@id/OrsayButton7"
+                    android:layout_alignTop="@id/histoiremuseum"
+                    android:layout_alignRight="@id/histoiremuseum"
                     android:layout_margin="5dp"
+                    android:buttonTint="#FFFFFF"
                     android:visibility="visible" />
-
             </RelativeLayout>
+
+
 
         </LinearLayout>
     </ScrollView>

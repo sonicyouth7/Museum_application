@@ -5,13 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
 
-public class carrousel_activity extends AppCompatActivity {
+public class CarrouselActivity extends AppCompatActivity {
 
     private ImageButton tableau1, tableau2, statue1, statue2;
 
@@ -34,7 +31,7 @@ public class carrousel_activity extends AppCompatActivity {
         tableau1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(carrousel_activity.this, description_oeuvre.class);
+                Intent intent = new Intent(CarrouselActivity.this, OeuvreDescriptionActivity.class);
                 startActivity(intent);
             }
         });
@@ -58,7 +55,7 @@ public class carrousel_activity extends AppCompatActivity {
         tableau2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(carrousel_activity.this, description_oeuvre.class);
+                Intent intent = new Intent(CarrouselActivity.this, OeuvreDescriptionActivity.class);
                 startActivity(intent);
             }
         });
@@ -82,7 +79,7 @@ public class carrousel_activity extends AppCompatActivity {
         statue1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(carrousel_activity.this, description_oeuvre.class);
+                Intent intent = new Intent(CarrouselActivity.this, OeuvreDescriptionActivity.class);
                 startActivity(intent);
             }
         });
@@ -106,7 +103,7 @@ public class carrousel_activity extends AppCompatActivity {
         statue2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(carrousel_activity.this, description_oeuvre.class);
+                Intent intent = new Intent(CarrouselActivity.this, OeuvreDescriptionActivity.class);
                 startActivity(intent);
             }
         });

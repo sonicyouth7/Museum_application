@@ -7,7 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class login_activity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     private Button loginuserButton, logimdpButton, loginButton;
 
@@ -26,7 +26,7 @@ public class login_activity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // En ce cas on demande d'aller dans la page menumuseums_activity
-                Intent intent = new Intent(login_activity.this, menumuseums_activity.class);
+                Intent intent = new Intent(LoginActivity.this, MuseumMenuActivity.class);
                 startActivity(intent);
             }
         });

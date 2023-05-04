@@ -7,44 +7,44 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class menu_general extends AppCompatActivity {
+public class MenuGeneral extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_general);
 
-        Button boutonHistoire = findViewById(R.id.bouton_histoire);
+        Button boutonHistoire = findViewById(R.id.boutonHistoires);
         boutonHistoire.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), histoiremusee.class);
+                Intent intent = new Intent(getApplicationContext(), HistoireMuseeActivity.class);
                 startActivity(intent);
             }
         });
 
-        Button boutonOeuvres = findViewById(R.id.bouton_oeuvres);
+        Button boutonOeuvres = findViewById(R.id.boutonOeuvres);
         boutonOeuvres.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), carrousel_activity.class);
+                Intent intent = new Intent(getApplicationContext(), CarrouselActivity.class);
                 startActivity(intent);
             }
         });
 
-        Button boutonLocalisation = findViewById(R.id.bouton_localisation);
+        Button boutonLocalisation = findViewById(R.id.boutonLocalisation);
         boutonLocalisation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), map_activity.class);
+                Intent intent = new Intent(getApplicationContext(), MapActivity.class);
                 startActivity(intent);
             }
         });
 
-        Button boutonInfos = findViewById(R.id.bouton_infos);
+        Button boutonInfos = findViewById(R.id.boutonInfos);
         boutonInfos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), infos_activity.class);
+                Intent intent = new Intent(getApplicationContext(), InfosActivity.class);
                 startActivity(intent);
             }
         });

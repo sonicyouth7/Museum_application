@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,31 +14,31 @@
         android:theme="@style/Theme.Museum_app"
         tools:targetApi="31">
         <activity
-            android:name=".carrousel_activity"
+            android:name=".CarrouselActivity"
             android:exported="false"/>
         <activity
-            android:name=".description_oeuvre"
+            android:name=".OeuvreDescriptionActivity"
             android:exported="false"/>
         <activity
-            android:name=".histoiremusee"
+            android:name=".HistoireMuseeActivity"
             android:exported="false"/>
         <activity
-            android:name=".infos_activity"
+            android:name=".InfosActivity"
             android:exported="false"/>
         <activity
-            android:name=".menu_activity"
+            android:name=".MenuActivity"
             android:exported="false"/>
         <activity
-            android:name=".menu_general"
+            android:name=".MenuGeneral"
             android:exported="false"/>
         <activity
-            android:name=".map_activity"
+            android:name=".MapActivity"
             android:exported="false"/>
         <activity
-            android:name=".menumuseums_activity"
+            android:name=".MuseumMenuActivity"
             android:exported="false"/>
         <activity
-            android:name=".login_activity"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
