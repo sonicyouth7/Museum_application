@@ -77,7 +77,6 @@ public class MuseumMenuActivity extends AppCompatActivity {
             checkBox1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                 @Override
                 public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
-
                 }
             });
 
@@ -98,7 +97,6 @@ public class MuseumMenuActivity extends AppCompatActivity {
             checkBox4.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                 @Override
                 public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
-
                 }
             });
 
