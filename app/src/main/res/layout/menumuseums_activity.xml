@@ -39,6 +39,7 @@
             android:src="@drawable/arrow_icon" />
 
     </RelativeLayout>
+
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="409dp"
@@ -64,10 +65,32 @@
                     android:id="@+id/LouvreButton"
                     android:layout_width="360dp"
                     android:layout_height="175dp"
+                    android:layout_marginBottom="16dp"
                     android:contentDescription="Musée Louvre"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/louvre_login"
-                    android:layout_marginBottom="16dp"/>
+                    android:src="@drawable/louvre_login" />
+
+                <TextView
+                    android:id="@+id/text_Louvre"
+                    android:layout_width="184dp"
+                    android:layout_height="21dp"
+                    android:layout_alignStart="@+id/LouvreButton"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#DDFFFFFF"
+                    android:padding="5dp"
+                    android:text="Musée du Louvre"
+                    android:textAlignment="center"
+                    android:textColor="@color/backgroundcolor"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/LouvreButton"
+                    app:layout_constraintLeft_toLeftOf="@id/LouvreButton"
+                    app:layout_constraintStart_toStartOf="@id/LouvreButton" />
 
                 <CheckBox
                     android:id="@+id/checkBox1"
@@ -94,10 +117,31 @@
                     android:id="@+id/OrsayButton"
                     android:layout_width="360dp"
                     android:layout_height="175dp"
+                    android:layout_marginBottom="16dp"
                     android:contentDescription="Musée d'Orsay"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/orsay"
-                    android:layout_marginBottom="16dp"/>
+                    android:src="@drawable/orsay" />
+                <TextView
+                    android:id="@+id/text_Orsay"
+                    android:layout_width="184dp"
+                    android:layout_height="21dp"
+                    android:layout_alignStart="@+id/OrsayButton"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#DDFFFFFF"
+                    android:padding="5dp"
+                    android:text="Musée d'Orsay"
+                    android:textAlignment="center"
+                    android:textColor="@color/backgroundcolor"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/OrsayButton"
+                    app:layout_constraintLeft_toLeftOf="@id/OrsayButton"
+                    app:layout_constraintStart_toStartOf="@id/OrsayButton" />
 
                 <CheckBox
                     android:id="@+id/checkBox2"
@@ -124,10 +168,31 @@
                     android:id="@+id/PetitPalais"
                     android:layout_width="360dp"
                     android:layout_height="175dp"
+                    android:layout_marginBottom="16dp"
                     android:contentDescription="Petit Palais"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/petit_palais"
-                    android:layout_marginBottom="16dp"/>
+                    android:src="@drawable/petit_palais" />
+                <TextView
+                    android:id="@+id/text_PetitPalais"
+                    android:layout_width="184dp"
+                    android:layout_height="21dp"
+                    android:layout_alignStart="@+id/PetitPalais"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#DDFFFFFF"
+                    android:padding="5dp"
+                    android:text="Petit Palais"
+                    android:textAlignment="center"
+                    android:textColor="@color/backgroundcolor"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/PetitPalais"
+                    app:layout_constraintLeft_toLeftOf="@id/PetitPalais"
+                    app:layout_constraintStart_toStartOf="@id/PetitPalais" />
 
                 <CheckBox
                     android:id="@+id/checkBox3"
@@ -151,10 +216,32 @@
                     android:id="@+id/CiteScience"
                     android:layout_width="360dp"
                     android:layout_height="175dp"
+                    android:layout_marginBottom="16dp"
                     android:contentDescription="Cité de Science"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/cite_science_parc"
-                    android:layout_marginBottom="16dp"/>
+                    android:src="@drawable/cite_science_parc" />
+
+                <TextView
+                    android:id="@+id/text_CiteScience"
+                    android:layout_width="184dp"
+                    android:layout_height="21dp"
+                    android:layout_alignStart="@+id/CiteScience"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#DDFFFFFF"
+                    android:padding="5dp"
+                    android:text="Cité de Science"
+                    android:textAlignment="center"
+                    android:textColor="@color/backgroundcolor"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/CiteScience"
+                    app:layout_constraintLeft_toLeftOf="@id/CiteScience"
+                    app:layout_constraintStart_toStartOf="@id/CiteScience" />
 
                 <CheckBox
                     android:id="@+id/checkBox4"
@@ -178,10 +265,32 @@
                     android:id="@+id/Pinault"
                     android:layout_width="360dp"
                     android:layout_height="175dp"
+                    android:layout_marginBottom="16dp"
                     android:contentDescription="Musée Pinault"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/pinault_museum"
-                    android:layout_marginBottom="16dp"/>
+                    android:src="@drawable/pinault_museum" />
+                <TextView
+                    android:id="@+id/text_Pinault"
+                    android:layout_width="184dp"
+                    android:layout_height="21dp"
+                    android:layout_alignStart="@+id/Pinault"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#DDFFFFFF"
+                    android:padding="5dp"
+                    android:text="Musée Pinault"
+                    android:textAlignment="center"
+                    android:textColor="@color/backgroundcolor"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/Pinault"
+                    app:layout_constraintLeft_toLeftOf="@id/Pinault"
+                    app:layout_constraintStart_toStartOf="@id/Pinault" />
+
 
                 <CheckBox
                     android:id="@+id/checkBox5"
@@ -205,10 +314,31 @@
                     android:id="@+id/Pompidou"
                     android:layout_width="360dp"
                     android:layout_height="175dp"
+                    android:layout_marginBottom="16dp"
                     android:contentDescription="Musée Pompidou"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/pompidou"
-                    android:layout_marginBottom="16dp"/>
+                    android:src="@drawable/pompidou" />
+                <TextView
+                    android:id="@+id/text_Pompidou"
+                    android:layout_width="184dp"
+                    android:layout_height="21dp"
+                    android:layout_alignStart="@+id/Pompidou"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#DDFFFFFF"
+                    android:padding="5dp"
+                    android:text="Musée Pompidou"
+                    android:textAlignment="center"
+                    android:textColor="@color/backgroundcolor"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/Pompidou"
+                    app:layout_constraintLeft_toLeftOf="@id/Pompidou"
+                    app:layout_constraintStart_toStartOf="@id/Pompidou" />
 
                 <CheckBox
                     android:id="@+id/checkBox6"
@@ -232,10 +362,32 @@
                     android:id="@+id/histoiremuseum"
                     android:layout_width="360dp"
                     android:layout_height="175dp"
+                    android:layout_marginBottom="16dp"
                     android:contentDescription="Musée d'Histoire"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/histoire_museum"
-                    android:layout_marginBottom="16dp"/>
+                    android:src="@drawable/histoire_museum" />
+
+                <TextView
+                    android:id="@+id/text_histoiremuseum"
+                    android:layout_width="184dp"
+                    android:layout_height="21dp"
+                    android:layout_alignStart="@+id/histoiremuseum"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="25dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#DDFFFFFF"
+                    android:padding="5dp"
+                    android:text="Musée d'Histoire"
+                    android:textAlignment="center"
+                    android:textColor="@color/backgroundcolor"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@id/histoiremuseum"
+                    app:layout_constraintLeft_toLeftOf="@id/histoiremuseum"
+                    app:layout_constraintStart_toStartOf="@id/histoiremuseum" />
 
                 <CheckBox
                     android:id="@+id/checkBox7"
@@ -247,7 +399,6 @@
                     android:buttonTint="#FFFFFF"
                     android:visibility="visible" />
             </RelativeLayout>
-
 
 
         </LinearLayout>
