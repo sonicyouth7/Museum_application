@@ -77,13 +77,10 @@ public class MuseumMenuActivity extends AppCompatActivity {
             checkBox1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                 @Override
                 public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
-                    if (isChecked) {
-                        checkBox1.setBackgroundResource(R.drawable.checked_checkbox);
-                    } else {
-                        checkBox1.setBackgroundResource(R.drawable.unchecked_checkbox);
-                    }
+                   
                 }
             });
+
 
             checkBox2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                 @Override
