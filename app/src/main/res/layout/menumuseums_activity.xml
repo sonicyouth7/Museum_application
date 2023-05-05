@@ -102,7 +102,6 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
                     android:layout_marginBottom="5dp"
-                    android:buttonTint="#FFFFFF"
                     android:visibility="visible" />
 
             </RelativeLayout>
@@ -153,7 +152,6 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
                     android:layout_marginBottom="5dp"
-                    android:buttonTint="#FFFFFF"
                     android:visibility="visible" />
 
             </RelativeLayout>
@@ -201,7 +199,7 @@
                     android:layout_alignTop="@id/PetitPalais"
                     android:layout_alignRight="@id/PetitPalais"
                     android:layout_margin="5dp"
-                    android:buttonTint="#FFFFFF"
+
                     android:visibility="visible" />
 
             </RelativeLayout>
@@ -250,7 +248,6 @@
                     android:layout_alignTop="@id/CiteScience"
                     android:layout_alignRight="@id/CiteScience"
                     android:layout_margin="5dp"
-                    android:buttonTint="#FFFFFF"
                     android:visibility="visible" />
 
             </RelativeLayout>
@@ -299,7 +296,6 @@
                     android:layout_alignTop="@id/Pinault"
                     android:layout_alignRight="@id/Pinault"
                     android:layout_margin="5dp"
-                    android:buttonTint="#FFFFFF"
                     android:visibility="visible" />
 
             </RelativeLayout>
@@ -347,7 +343,6 @@
                     android:layout_alignTop="@id/Pompidou"
                     android:layout_alignRight="@id/Pompidou"
                     android:layout_margin="5dp"
-                    android:buttonTint="#FFFFFF"
                     android:visibility="visible" />
 
             </RelativeLayout>
@@ -396,7 +391,6 @@
                     android:layout_alignTop="@id/histoiremuseum"
                     android:layout_alignRight="@id/histoiremuseum"
                     android:layout_margin="5dp"
-                    android:buttonTint="#FFFFFF"
                     android:visibility="visible" />
             </RelativeLayout>
 
