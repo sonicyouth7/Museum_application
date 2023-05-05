@@ -77,7 +77,7 @@ public class MuseumMenuActivity extends AppCompatActivity {
             checkBox1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                 @Override
                 public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
-                   
+
                 }
             });
 
@@ -85,66 +85,38 @@ public class MuseumMenuActivity extends AppCompatActivity {
             checkBox2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                 @Override
                 public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
-                    if (isChecked) {
-                        checkBox2.setBackgroundResource(R.drawable.checked_checkbox);
-                    } else {
-                        checkBox2.setBackgroundResource(R.drawable.unchecked_checkbox);
-                    }
+
                 }
             });
 
             checkBox3.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                 @Override
                 public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
-                    if (isChecked) {
-                        checkBox3.setBackgroundResource(R.drawable.checked_checkbox);
-                    } else {
-                        checkBox3.setBackgroundResource(R.drawable.unchecked_checkbox);
-                    }
                 }
             });
 
             checkBox4.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                 @Override
                 public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
-                    if (isChecked) {
-                        checkBox4.setBackgroundResource(R.drawable.checked_checkbox);
-                    } else {
-                        checkBox4.setBackgroundResource(R.drawable.unchecked_checkbox);
-                    }
+
                 }
             });
 
             checkBox5.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                 @Override
                 public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
-                    if (isChecked) {
-                        checkBox5.setBackgroundResource(R.drawable.checked_checkbox);
-                    } else {
-                        checkBox5.setBackgroundResource(R.drawable.unchecked_checkbox);
-                    }
                 }
             });
 
             checkBox6.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                 @Override
                 public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
-                    if (isChecked) {
-                        checkBox6.setBackgroundResource(R.drawable.checked_checkbox);
-                    } else {
-                        checkBox6.setBackgroundResource(R.drawable.unchecked_checkbox);
-                    }
                 }
             });
 
             checkBox7.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                 @Override
                 public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
-                    if (isChecked) {
-                        checkBox7.setBackgroundResource(R.drawable.checked_checkbox);
-                    } else {
-                        checkBox7.setBackgroundResource(R.drawable.unchecked_checkbox);
-                    }
                 }
             });
 
