@@ -1,6 +1,7 @@
 package com.example.museum_app;
 
 import androidx.appcompat.app.AppCompatActivity;
+import com.example.museum_app.MenuActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,6 +18,7 @@ public class CarrouselActivity extends AppCompatActivity {
     protected void carrousel(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.carrousel_activity);
+        MenuActivity.setupMenuButtons(this);
 
         tableau1 = findViewById(R.id.tableau1);
         tableau2 = findViewById(R.id.tableau2);

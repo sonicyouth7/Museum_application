@@ -1,5 +1,6 @@
 package com.example.museum_app;
 
+import com.example.museum_app.MenuActivity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -13,6 +14,8 @@ public class InfosActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.infos);
+
+        MenuActivity.setupMenuButtons(this);
     }
 
     public void onReserveNowClick(View view) {
