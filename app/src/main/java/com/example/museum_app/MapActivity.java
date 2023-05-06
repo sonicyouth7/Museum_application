@@ -3,6 +3,8 @@ package com.example.museum_app;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+import com.example.museum_app.MenuActivity;
+
 
 import org.osmdroid.config.Configuration;
 import org.osmdroid.tileprovider.tilesource.TileSourceFactory;
@@ -29,6 +31,8 @@ public class MapActivity extends AppCompatActivity {
 
         // Ajoutez les marqueurs des musées
         addMuseumMarkers();
+
+        MenuActivity.setupMenuButtons(this);
 
     }
 
