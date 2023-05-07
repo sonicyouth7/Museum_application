@@ -8,4 +8,7 @@
     <string name="protection_RGPD">We will not collect or store any personal information related to your account.</string>
     <string name="reserve_now">Réservez maintenant votre billet</string>
     <string name="reserve_now_link">https://www.ticketlouvre.fr/louvre/b2c/index.cfm/home</string>
+    <string name="profilename">Silvia Targa</string>
+    <string name="profile_image">profile image</string>
+    <string name="settings">Settings</string>
 </resources>

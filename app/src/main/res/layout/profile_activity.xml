@@ -45,14 +45,15 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/RelativeLayoutProfile"
-        tools:srcCompat="@drawable/atelier_lumi_re" />
+        tools:srcCompat="@drawable/atelier_lumi_re"
+        android:contentDescription="photo header" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imageprofile"
         android:layout_width="127dp"
         android:layout_height="116dp"
         android:layout_marginStart="140dp"
-        android:contentDescription="profile image"
+        android:contentDescription="@string/profile_image"
         android:src="@drawable/profile_image"
         app:civ_border_color="@color/backgroundcolor"
         app:civ_border_width="1dp"
@@ -66,7 +67,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:text="Silvia Targa"
+        android:text="@string/profilename"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@id/imageprofile"
@@ -106,13 +107,14 @@
                     android:id="@+id/SettingsIcon"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/settings_icon" />
+                    app:srcCompat="@drawable/settings_icon"
+                    android:contentDescription="@string/settings" />
 
                 <TextView
                     android:id="@+id/SetingsText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Settings"
+                    android:text="@string/settings"
                     android:textAlignment="center"
                     android:textColor="#000000"
                     android:textSize="14sp"
