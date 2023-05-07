@@ -8,8 +8,11 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.io.ObjectInputStream;
+import com.squareup.picasso.Picasso;
+
 public class ProfileActivity extends AppCompatActivity {
-    private ImageView backButton, SettingsIcon, EditIcon;
+    private ImageView backButton, SettingsIcon, EditIcon, header, imageprofile;
     private TextView ChangePassword;
 
 
@@ -22,6 +25,9 @@ public class ProfileActivity extends AppCompatActivity {
         EditIcon = findViewById(R.id.EditIcon);
         ChangePassword = findViewById(R.id.ChangePassword);
         backButton = findViewById(R.id.backButton);
+        header = findViewById(R.id.header);
+        imageprofile = findViewById(R.id.imageprofile);
+
 
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,6 +35,12 @@ public class ProfileActivity extends AppCompatActivity {
                 onBackPressed();
             }
         });
+
+        Picasso.get().load("https://newprofilepic2.photo-cdn.net//assets/images/article/profile.jpg")
+                .centerCrop()
+                .fit()
+                .into(imageprofile);
+
 //vu qu'on a pas d'autre pages ici nous avons préféré seulement intercepter le click et un pop up apparait
         SettingsIcon.setOnClickListener(new View.OnClickListener() {
             @Override
