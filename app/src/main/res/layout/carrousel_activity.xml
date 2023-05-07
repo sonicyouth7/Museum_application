@@ -11,7 +11,7 @@
             android:id="@+id/presentation_oeuvres"
             style="@style/Museum_app_text"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:fontFamily="sans-serif"
             android:text="Présentation des oeuvres"
             app:layout_constraintEnd_toEndOf="parent"

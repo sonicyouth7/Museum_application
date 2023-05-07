@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MuseumMenuActivity extends AppCompatActivity {
-        private ImageView backButton;
+        private ImageView backButton, profileButton;
         private ImageButton LouvreButton, OrsayButton, PetitPalaisButton, CiteScienceButton;
         private CheckBox checkBox1, checkBox2, checkBox3, checkBox4, checkBox5, checkBox6, checkBox7;
 
@@ -21,6 +21,7 @@ public class MuseumMenuActivity extends AppCompatActivity {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.menumuseums_activity);
 
+            profileButton = findViewById(R.id.ProfileButton);
             backButton = findViewById(R.id.backButton);
             LouvreButton = findViewById(R.id.LouvreButton);
             OrsayButton = findViewById(R.id.OrsayButton);
@@ -41,6 +42,14 @@ public class MuseumMenuActivity extends AppCompatActivity {
                 onBackPressed();
             }
             });
+
+            profileButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(MuseumMenuActivity.this, ProfileActivity.class);
+                    startActivity(intent);
+                    }
+                });
 
             LouvreButton.setOnClickListener(new View.OnClickListener() {
                 @Override
