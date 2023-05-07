@@ -46,6 +46,7 @@ public class MuseumMenuActivity extends AppCompatActivity {
             profileButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    //avec intent on lui determine l'activité à faire
                     Intent intent = new Intent(MuseumMenuActivity.this, ProfileActivity.class);
                     startActivity(intent);
                     }
@@ -84,8 +85,12 @@ public class MuseumMenuActivity extends AppCompatActivity {
             });
 
             checkBox1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-                @Override
+                @Override //comme on a utilisé déjà un bouton CheckBox ici le code determine
+                //les changements automatiquement avec la méthode OnCheckedChanged qui permet
+                //de voir si la case est coché ou pas
                 public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
+                    //ici on aurait pu définir des comportements en cas la case est accoché ou pas
+                    //exemple if la case est cochée alor une action est faite else non
                 }
             });
 

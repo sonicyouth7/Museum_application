@@ -22,6 +22,7 @@ import android.widget.Toast;
             play_button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    //on a pas un audio donc on a préféré montrer l'interception du click
                     Toast.makeText(getApplicationContext(), "Lecture de l'audio...", Toast.LENGTH_SHORT).show();
 
                 }

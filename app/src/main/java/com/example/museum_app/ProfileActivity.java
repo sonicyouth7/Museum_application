@@ -29,7 +29,7 @@ public class ProfileActivity extends AppCompatActivity {
                 onBackPressed();
             }
         });
-
+//vu qu'on a pas d'autre pages ici nous avons préféré seulement intercepter le click et un pop up apparait
         SettingsIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

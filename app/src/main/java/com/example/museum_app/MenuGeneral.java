@@ -12,8 +12,9 @@ public class MenuGeneral extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_general);
-
+        //on récupere les boutons, ici j'ai préféré le faire un par un
         Button boutonHistoire = findViewById(R.id.boutonHistoires);
+        //avec la méthode OnClickListener on definit les écuteurs d'événements pour les boutons
         boutonHistoire.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
