@@ -37,31 +37,20 @@
 
     </RelativeLayout>
 
-    <ImageView
-        android:id="@+id/header"
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RelativeLayoutProfile"
-        tools:srcCompat="@drawable/atelier_lumi_re"
-        android:contentDescription="photo header" />
+
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imageprofile"
         android:layout_width="127dp"
         android:layout_height="116dp"
+        android:layout_marginTop="32dp"
         android:contentDescription="@string/profile_image"
         android:src="@drawable/profile_image"
         app:civ_border_color="@color/backgroundcolor"
         app:civ_border_width="1dp"
-        app:layout_constraintBottom_toBottomOf="@id/header"
-        app:layout_constraintEnd_toEndOf="@+id/header"
-        app:layout_constraintStart_toStartOf="@id/header"
-        app:layout_constraintTop_toBottomOf="@id/header"
-        app:layout_constraintVertical_bias="0.818" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/RelativeLayoutProfile" />
 
     <TextView
         android:id="@+id/profilename"
