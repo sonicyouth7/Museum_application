@@ -15,7 +15,7 @@ public class CarrouselActivity extends AppCompatActivity {
 
     private ImageButton dislike_tableau1, dislike_tableau2, dislike_statue1, dislike_statue2;
 
-    protected void carrousel(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.carrousel_activity);
         MenuActivity.setupMenuButtons(this);
