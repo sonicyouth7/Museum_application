@@ -20,7 +20,7 @@ public class MuseumMenuActivity extends AppCompatActivity {
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.menumuseums_activity);
-
+//chercher les boutons avec findViewById
             profileButton = findViewById(R.id.ProfileButton);
             backButton = findViewById(R.id.backButton);
             LouvreButton = findViewById(R.id.LouvreButton);
@@ -35,7 +35,7 @@ public class MuseumMenuActivity extends AppCompatActivity {
             checkBox5 = findViewById(R.id.checkBox5);
             checkBox6 = findViewById(R.id.checkBox6);
             checkBox7 = findViewById(R.id.checkBox7);
-
+//bouton Back pour aller à la page d'avant avec modèl onBackPressed
             backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
