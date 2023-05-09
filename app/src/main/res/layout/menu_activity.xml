@@ -9,28 +9,32 @@
     <ImageButton
         android:id="@+id/histoire"
         style="@style/Menu_button"
-        app:srcCompat="@drawable/history_icon"/>
+        app:srcCompat="@drawable/history_icon"
+        android:contentDescription="@string/histoire_button" />
 
     <ImageButton
         android:id="@+id/oeuvres"
         style="@style/Menu_button"
         app:srcCompat="@drawable/oeuvre_icon"
-        />
+        android:contentDescription="@string/oeuvres_button" />
 
     <ImageButton
         android:id="@+id/home"
         style="@style/Menu_button"
-        app:srcCompat="@drawable/home_icon"/>
+        app:srcCompat="@drawable/home_icon"
+        android:contentDescription="@string/home_button" />
 
     <ImageButton
         android:id="@+id/imageLocation"
         style="@style/Menu_button"
-        app:srcCompat="@drawable/localisation_icon" />
+        app:srcCompat="@drawable/localisation_icon"
+        android:contentDescription="@string/location_button" />
 
     <ImageButton
         android:id="@+id/info"
         style="@style/Menu_button"
-        app:srcCompat="@drawable/info_icon"/>
+        app:srcCompat="@drawable/info_icon"
+        android:contentDescription="@string/info_button" />
 
 </LinearLayout>
 

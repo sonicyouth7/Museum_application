@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white">
@@ -23,7 +22,8 @@
             android:background="@color/backgroundcolor"
             android:padding="8dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/arrow_icon" />
+            android:src="@drawable/arrow_icon"
+            android:contentDescription="@string/back_button" />
 
         <TextView
             android:id="@+id/MuseumMenu"
@@ -31,7 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="40dp"
             android:layout_centerInParent="true"
-            android:text="Liste des musées"
+            android:text="@string/Museum_menu"
             android:textIsSelectable="false"
             android:layout_toEndOf="@id/backButton"
             android:layout_toStartOf="@id/ProfileButton"
@@ -46,7 +46,8 @@
             android:background="@color/backgroundcolor"
             android:padding="8dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/profile_icon" />
+            android:src="@drawable/profile_icon"
+            android:contentDescription="@string/button_du_profile" />
 
     </RelativeLayout>
 
@@ -77,7 +78,7 @@
                     android:layout_width="360dp"
                     android:layout_height="175dp"
                     android:layout_marginBottom="16dp"
-                    android:contentDescription="Musée Louvre"
+                    android:contentDescription="@string/mus_e_louvre"
                     android:scaleType="centerCrop"
                     android:src="@drawable/louvre_login" />
 
@@ -93,7 +94,7 @@
                     android:layout_marginBottom="16dp"
                     android:background="#DDFFFFFF"
                     android:padding="5dp"
-                    android:text="Musée du Louvre"
+                    android:text="@string/mus_e_louvre"
                     android:textAlignment="center"
                     android:textColor="@color/backgroundcolor"
                     android:textSize="10sp"
@@ -128,7 +129,7 @@
                     android:layout_width="360dp"
                     android:layout_height="175dp"
                     android:layout_marginBottom="16dp"
-                    android:contentDescription="Musée d'Orsay"
+                    android:contentDescription="@string/mus_e_d_orsay"
                     android:scaleType="centerCrop"
                     android:src="@drawable/orsay" />
                 <TextView
@@ -143,7 +144,7 @@
                     android:layout_marginBottom="16dp"
                     android:background="#DDFFFFFF"
                     android:padding="5dp"
-                    android:text="Musée d'Orsay"
+                    android:text="@string/mus_e_d_orsay"
                     android:textAlignment="center"
                     android:textColor="@color/backgroundcolor"
                     android:textSize="10sp"
@@ -178,7 +179,7 @@
                     android:layout_width="360dp"
                     android:layout_height="175dp"
                     android:layout_marginBottom="16dp"
-                    android:contentDescription="Petit Palais"
+                    android:contentDescription="@string/petit_palais"
                     android:scaleType="centerCrop"
                     android:src="@drawable/petit_palais" />
                 <TextView
@@ -193,7 +194,7 @@
                     android:layout_marginBottom="16dp"
                     android:background="#DDFFFFFF"
                     android:padding="5dp"
-                    android:text="Petit Palais"
+                    android:text="@string/petit_palais"
                     android:textAlignment="center"
                     android:textColor="@color/backgroundcolor"
                     android:textSize="10sp"
@@ -226,7 +227,7 @@
                     android:layout_width="360dp"
                     android:layout_height="175dp"
                     android:layout_marginBottom="16dp"
-                    android:contentDescription="Cité de Science"
+                    android:contentDescription="@string/cit_de_science"
                     android:scaleType="centerCrop"
                     android:src="@drawable/cite_science_parc" />
 
@@ -242,7 +243,7 @@
                     android:layout_marginBottom="16dp"
                     android:background="#DDFFFFFF"
                     android:padding="5dp"
-                    android:text="Cité de Science"
+                    android:text="@string/cit_de_science"
                     android:textAlignment="center"
                     android:textColor="@color/backgroundcolor"
                     android:textSize="10sp"
@@ -274,7 +275,7 @@
                     android:layout_width="360dp"
                     android:layout_height="175dp"
                     android:layout_marginBottom="16dp"
-                    android:contentDescription="Musée Pinault"
+                    android:contentDescription="@string/mus_e_pinault"
                     android:scaleType="centerCrop"
                     android:src="@drawable/pinault_museum" />
                 <TextView
@@ -289,7 +290,7 @@
                     android:layout_marginBottom="16dp"
                     android:background="#DDFFFFFF"
                     android:padding="5dp"
-                    android:text="Musée Pinault"
+                    android:text="@string/mus_e_pinault"
                     android:textAlignment="center"
                     android:textColor="@color/backgroundcolor"
                     android:textSize="10sp"
@@ -322,7 +323,7 @@
                     android:layout_width="360dp"
                     android:layout_height="175dp"
                     android:layout_marginBottom="16dp"
-                    android:contentDescription="Musée Pompidou"
+                    android:contentDescription="@string/mus_e_pompidou"
                     android:scaleType="centerCrop"
                     android:src="@drawable/pompidou" />
                 <TextView
@@ -337,7 +338,7 @@
                     android:layout_marginBottom="16dp"
                     android:background="#DDFFFFFF"
                     android:padding="5dp"
-                    android:text="Musée Pompidou"
+                    android:text="@string/mus_e_pompidou"
                     android:textAlignment="center"
                     android:textColor="@color/backgroundcolor"
                     android:textSize="10sp"
@@ -369,7 +370,7 @@
                     android:layout_width="360dp"
                     android:layout_height="175dp"
                     android:layout_marginBottom="16dp"
-                    android:contentDescription="Musée d'Histoire"
+                    android:contentDescription="@string/mus_e_d_histoire"
                     android:scaleType="centerCrop"
                     android:src="@drawable/histoire_museum" />
 
@@ -385,7 +386,7 @@
                     android:layout_marginBottom="16dp"
                     android:background="#DDFFFFFF"
                     android:padding="5dp"
-                    android:text="Musée d'Histoire"
+                    android:text="@string/mus_e_d_histoire"
                     android:textAlignment="center"
                     android:textColor="@color/backgroundcolor"
                     android:textSize="10sp"
