@@ -73,48 +73,15 @@
                 android:gravity="center"
                 android:orientation="horizontal">
 
-                <ImageButton
-                    android:id="@+id/LouvreButton"
+                <ImageView
+                    android:id="@+id/title"
                     android:layout_width="360dp"
                     android:layout_height="175dp"
                     android:layout_marginBottom="16dp"
-                    android:contentDescription="@string/mus_e_louvre"
+                    android:contentDescription="title"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/louvre_login" />
+                    android:src="@drawable/title" />
 
-                <TextView
-                    android:id="@+id/text_Louvre"
-                    android:layout_width="184dp"
-                    android:layout_height="21dp"
-                    android:layout_alignStart="@+id/LouvreButton"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginStart="19dp"
-                    android:layout_marginTop="17dp"
-                    android:layout_marginEnd="25dp"
-                    android:layout_marginBottom="16dp"
-                    android:background="#DDFFFFFF"
-                    android:padding="5dp"
-                    android:text="@string/mus_e_louvre"
-                    android:textAlignment="center"
-                    android:textColor="@color/backgroundcolor"
-                    android:textSize="10sp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@id/LouvreButton"
-                    app:layout_constraintLeft_toLeftOf="@id/LouvreButton"
-                    app:layout_constraintStart_toStartOf="@id/LouvreButton" />
-
-                <CheckBox
-                    android:id="@+id/checkBox1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignTop="@id/LouvreButton"
-                    android:layout_alignRight="@id/LouvreButton"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:visibility="visible"/>
 
             </RelativeLayout>
 
@@ -125,18 +92,19 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/OrsayButton"
+                    android:id="@+id/NewsButton"
                     android:layout_width="360dp"
                     android:layout_height="175dp"
                     android:layout_marginBottom="16dp"
-                    android:contentDescription="@string/mus_e_d_orsay"
+                    android:contentDescription="News"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/orsay" />
+                    android:src="@drawable/news" />
+
                 <TextView
-                    android:id="@+id/text_Orsay"
-                    android:layout_width="184dp"
-                    android:layout_height="21dp"
-                    android:layout_alignStart="@+id/OrsayButton"
+                    android:id="@+id/text_News"
+                    android:layout_width="139dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/NewsButton"
                     android:layout_alignParentTop="true"
                     android:layout_marginStart="19dp"
                     android:layout_marginTop="17dp"
@@ -144,22 +112,22 @@
                     android:layout_marginBottom="16dp"
                     android:background="#DDFFFFFF"
                     android:padding="5dp"
-                    android:text="@string/mus_e_d_orsay"
+                    android:text="馆内新闻"
                     android:textAlignment="center"
                     android:textColor="@color/backgroundcolor"
                     android:textSize="10sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@id/OrsayButton"
-                    app:layout_constraintLeft_toLeftOf="@id/OrsayButton"
-                    app:layout_constraintStart_toStartOf="@id/OrsayButton" />
+                    app:layout_constraintEnd_toEndOf="@id/NewsButton"
+                    app:layout_constraintLeft_toLeftOf="@id/NewsButton"
+                    app:layout_constraintStart_toStartOf="@id/NewsButton" />
 
                 <CheckBox
                     android:id="@+id/checkBox2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignTop="@id/OrsayButton"
-                    android:layout_alignRight="@id/OrsayButton"
+                    android:layout_alignTop="@id/NewsButton"
+                    android:layout_alignRight="@id/NewsButton"
                     android:layout_marginStart="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="5dp"
@@ -175,18 +143,19 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/PetitPalais"
+                    android:id="@+id/showing"
                     android:layout_width="360dp"
                     android:layout_height="175dp"
                     android:layout_marginBottom="16dp"
-                    android:contentDescription="@string/petit_palais"
+                    android:contentDescription="showingButton"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/petit_palais" />
+                    android:src="@drawable/showing" />
+
                 <TextView
-                    android:id="@+id/text_PetitPalais"
-                    android:layout_width="184dp"
-                    android:layout_height="21dp"
-                    android:layout_alignStart="@+id/PetitPalais"
+                    android:id="@+id/text_showing"
+                    android:layout_width="141dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/showing"
                     android:layout_alignParentTop="true"
                     android:layout_marginStart="19dp"
                     android:layout_marginTop="17dp"
@@ -194,22 +163,22 @@
                     android:layout_marginBottom="16dp"
                     android:background="#DDFFFFFF"
                     android:padding="5dp"
-                    android:text="@string/petit_palais"
+                    android:text="正在展出"
                     android:textAlignment="center"
                     android:textColor="@color/backgroundcolor"
                     android:textSize="10sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@id/PetitPalais"
-                    app:layout_constraintLeft_toLeftOf="@id/PetitPalais"
-                    app:layout_constraintStart_toStartOf="@id/PetitPalais" />
+                    app:layout_constraintEnd_toEndOf="@id/showing"
+                    app:layout_constraintLeft_toLeftOf="@id/showing"
+                    app:layout_constraintStart_toStartOf="@id/showing" />
 
                 <CheckBox
                     android:id="@+id/checkBox3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignTop="@id/PetitPalais"
-                    android:layout_alignRight="@id/PetitPalais"
+                    android:layout_alignTop="@id/showing"
+                    android:layout_alignRight="@id/showing"
                     android:layout_margin="5dp"
 
                     android:visibility="visible" />
@@ -223,19 +192,19 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/CiteScience"
+                    android:id="@+id/goods"
                     android:layout_width="360dp"
                     android:layout_height="175dp"
                     android:layout_marginBottom="16dp"
-                    android:contentDescription="@string/cit_de_science"
+                    android:contentDescription="goods"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/cite_science_parc" />
+                    android:src="@drawable/goods" />
 
                 <TextView
-                    android:id="@+id/text_CiteScience"
-                    android:layout_width="184dp"
-                    android:layout_height="21dp"
-                    android:layout_alignStart="@+id/CiteScience"
+                    android:id="@+id/text_goods"
+                    android:layout_width="139dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/goods"
                     android:layout_alignParentTop="true"
                     android:layout_marginStart="19dp"
                     android:layout_marginTop="17dp"
@@ -243,22 +212,22 @@
                     android:layout_marginBottom="16dp"
                     android:background="#DDFFFFFF"
                     android:padding="5dp"
-                    android:text="@string/cit_de_science"
+                    android:text="藏品"
                     android:textAlignment="center"
                     android:textColor="@color/backgroundcolor"
                     android:textSize="10sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@id/CiteScience"
-                    app:layout_constraintLeft_toLeftOf="@id/CiteScience"
-                    app:layout_constraintStart_toStartOf="@id/CiteScience" />
+                    app:layout_constraintEnd_toEndOf="@id/goods"
+                    app:layout_constraintLeft_toLeftOf="@id/goods"
+                    app:layout_constraintStart_toStartOf="@id/goods" />
 
                 <CheckBox
                     android:id="@+id/checkBox4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignTop="@id/CiteScience"
-                    android:layout_alignRight="@id/CiteScience"
+                    android:layout_alignTop="@id/goods"
+                    android:layout_alignRight="@id/goods"
                     android:layout_margin="5dp"
                     android:visibility="visible" />
 
@@ -271,18 +240,19 @@
                 android:orientation="horizontal">
 
                 <ImageButton
-                    android:id="@+id/Pinault"
+                    android:id="@+id/products"
                     android:layout_width="360dp"
                     android:layout_height="175dp"
                     android:layout_marginBottom="16dp"
-                    android:contentDescription="@string/mus_e_pinault"
+                    android:contentDescription="@string/goods"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/pinault_museum" />
+                    android:src="@drawable/products" />
+
                 <TextView
-                    android:id="@+id/text_Pinault"
-                    android:layout_width="184dp"
-                    android:layout_height="21dp"
-                    android:layout_alignStart="@+id/Pinault"
+                    android:id="@+id/text_products"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/products"
                     android:layout_alignParentTop="true"
                     android:layout_marginStart="19dp"
                     android:layout_marginTop="17dp"
@@ -290,121 +260,30 @@
                     android:layout_marginBottom="16dp"
                     android:background="#DDFFFFFF"
                     android:padding="5dp"
-                    android:text="@string/mus_e_pinault"
+                    android:text="文创"
                     android:textAlignment="center"
                     android:textColor="@color/backgroundcolor"
                     android:textSize="10sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@id/Pinault"
-                    app:layout_constraintLeft_toLeftOf="@id/Pinault"
-                    app:layout_constraintStart_toStartOf="@id/Pinault" />
+                    app:layout_constraintEnd_toEndOf="@id/products"
+                    app:layout_constraintLeft_toLeftOf="@id/products"
+                    app:layout_constraintStart_toStartOf="@id/products" />
 
 
                 <CheckBox
                     android:id="@+id/checkBox5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignTop="@id/Pinault"
-                    android:layout_alignRight="@id/Pinault"
+                    android:layout_alignTop="@id/products"
+                    android:layout_alignRight="@id/products"
                     android:layout_margin="5dp"
                     android:visibility="visible" />
 
             </RelativeLayout>
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="horizontal">
 
-                <ImageButton
-                    android:id="@+id/Pompidou"
-                    android:layout_width="360dp"
-                    android:layout_height="175dp"
-                    android:layout_marginBottom="16dp"
-                    android:contentDescription="@string/mus_e_pompidou"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/pompidou" />
-                <TextView
-                    android:id="@+id/text_Pompidou"
-                    android:layout_width="184dp"
-                    android:layout_height="21dp"
-                    android:layout_alignStart="@+id/Pompidou"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginStart="19dp"
-                    android:layout_marginTop="17dp"
-                    android:layout_marginEnd="25dp"
-                    android:layout_marginBottom="16dp"
-                    android:background="#DDFFFFFF"
-                    android:padding="5dp"
-                    android:text="@string/mus_e_pompidou"
-                    android:textAlignment="center"
-                    android:textColor="@color/backgroundcolor"
-                    android:textSize="10sp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@id/Pompidou"
-                    app:layout_constraintLeft_toLeftOf="@id/Pompidou"
-                    app:layout_constraintStart_toStartOf="@id/Pompidou" />
 
-                <CheckBox
-                    android:id="@+id/checkBox6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignTop="@id/Pompidou"
-                    android:layout_alignRight="@id/Pompidou"
-                    android:layout_margin="5dp"
-                    android:visibility="visible" />
-
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <ImageButton
-                    android:id="@+id/histoiremuseum"
-                    android:layout_width="360dp"
-                    android:layout_height="175dp"
-                    android:layout_marginBottom="16dp"
-                    android:contentDescription="@string/mus_e_d_histoire"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/histoire_museum" />
-
-                <TextView
-                    android:id="@+id/text_histoiremuseum"
-                    android:layout_width="184dp"
-                    android:layout_height="21dp"
-                    android:layout_alignStart="@+id/histoiremuseum"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginStart="19dp"
-                    android:layout_marginTop="17dp"
-                    android:layout_marginEnd="25dp"
-                    android:layout_marginBottom="16dp"
-                    android:background="#DDFFFFFF"
-                    android:padding="5dp"
-                    android:text="@string/mus_e_d_histoire"
-                    android:textAlignment="center"
-                    android:textColor="@color/backgroundcolor"
-                    android:textSize="10sp"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@id/histoiremuseum"
-                    app:layout_constraintLeft_toLeftOf="@id/histoiremuseum"
-                    app:layout_constraintStart_toStartOf="@id/histoiremuseum" />
-
-                <CheckBox
-                    android:id="@+id/checkBox7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignTop="@id/histoiremuseum"
-                    android:layout_alignRight="@id/histoiremuseum"
-                    android:layout_margin="5dp"
-                    android:visibility="visible" />
-            </RelativeLayout>
 
 
         </LinearLayout>

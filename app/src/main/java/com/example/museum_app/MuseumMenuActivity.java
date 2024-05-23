@@ -13,8 +13,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MuseumMenuActivity extends AppCompatActivity {
         private ImageView backButton, profileButton;
-        private ImageButton LouvreButton, OrsayButton, PetitPalaisButton, CiteScienceButton;
-        private CheckBox checkBox1, checkBox2, checkBox3, checkBox4, checkBox5, checkBox6, checkBox7;
+        private ImageButton NewsButton, showingButton, goodsButton,productsButton;
+        private CheckBox checkBox1, checkBox2, checkBox3, checkBox4, checkBox5;
 
     @Override
         protected void onCreate(Bundle savedInstanceState) {
@@ -23,18 +23,17 @@ public class MuseumMenuActivity extends AppCompatActivity {
 //chercher les boutons avec findViewById
             profileButton = findViewById(R.id.ProfileButton);
             backButton = findViewById(R.id.backButton);
-            LouvreButton = findViewById(R.id.LouvreButton);
-            OrsayButton = findViewById(R.id.OrsayButton);
-            PetitPalaisButton = findViewById(R.id.PetitPalais);
-            CiteScienceButton = findViewById(R.id.CiteScience);
 
-            checkBox1 = findViewById(R.id.checkBox1);
+            NewsButton = findViewById(R.id.NewsButton);
+            showingButton = findViewById(R.id.showing);
+            goodsButton = findViewById(R.id.goods);
+            productsButton = findViewById(R.id.products);
             checkBox2 = findViewById(R.id.checkBox2);
             checkBox3 = findViewById(R.id.checkBox3);
             checkBox4 = findViewById(R.id.checkBox4);
             checkBox5 = findViewById(R.id.checkBox5);
-            checkBox6 = findViewById(R.id.checkBox6);
-            checkBox7 = findViewById(R.id.checkBox7);
+
+
 //bouton Back pour aller à la page d'avant avec modèl onBackPressed
             backButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,7 +51,8 @@ public class MuseumMenuActivity extends AppCompatActivity {
                     }
                 });
 
-            LouvreButton.setOnClickListener(new View.OnClickListener() {
+
+            NewsButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(MuseumMenuActivity.this, MenuGeneral.class);
@@ -60,7 +60,7 @@ public class MuseumMenuActivity extends AppCompatActivity {
                 }
             });
 
-            OrsayButton.setOnClickListener(new View.OnClickListener() {
+             showingButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(MuseumMenuActivity.this, MenuGeneral.class);
@@ -68,31 +68,21 @@ public class MuseumMenuActivity extends AppCompatActivity {
                 }
             });
 
-             PetitPalaisButton.setOnClickListener(new View.OnClickListener() {
+             goodsButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(MuseumMenuActivity.this, MenuGeneral.class);
                     startActivity(intent);
                 }
             });
+        productsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MuseumMenuActivity.this, MenuGeneral.class);
+                startActivity(intent);
+            }
+        });
 
-             CiteScienceButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(MuseumMenuActivity.this, MenuGeneral.class);
-                    startActivity(intent);
-                }
-            });
-
-            checkBox1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-                @Override //comme on a utilisé déjà un bouton CheckBox ici le code determine
-                //les changements automatiquement avec la méthode OnCheckedChanged qui permet
-                //de voir si la case est coché ou pas
-                public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
-                    //ici on aurait pu définir des comportements en cas la case est accoché ou pas
-                    //exemple if la case est cochée alor une action est faite else non
-                }
-            });
 
 
             checkBox2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -120,17 +110,9 @@ public class MuseumMenuActivity extends AppCompatActivity {
                 }
             });
 
-            checkBox6.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
-                }
-            });
 
-            checkBox7.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
-                }
-            });
+
+
 
         }
     }
