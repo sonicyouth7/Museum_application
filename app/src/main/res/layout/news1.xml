@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login">
+
+    <RelativeLayout
+        android:id="@+id/myRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@color/backgroundcolor"
+            android:padding="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/arrow_icon"
+            android:contentDescription="@string/back_button" />
+
+        <TextView
+            android:id="@+id/MuseumMenu"
+            style="@style/Museum_app_text"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:text="@string/Museum_menu"
+            android:textIsSelectable="false"
+            android:layout_toEndOf="@id/backButton"
+            android:layout_toStartOf="@id/ProfileButton"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/ProfileButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@color/backgroundcolor"
+            android:padding="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_icon"
+            android:contentDescription="button_profile" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="409dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/myRelativeLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="69dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="85dp"
+            android:layout_marginBottom="16dp"
+
+            android:textAlignment="center"
+            android:text="中国丝绸博物馆“千载丝路不难逢：丝路上的吉祥纹样”展亮相杭州地铁
+2024-05-01"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/title"
+                    android:layout_width="197dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="16dp"
+                    android:contentDescription="title"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/n1" />
+
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="323dp"
+                android:layout_height="236dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="69dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="85dp"
+                android:layout_marginBottom="16dp"
+                android:text="主办：中国丝绸博物馆 杭州地铁商业经营管理有限公司\n时间：2024.4.26-5.26\n地点：武林门3号线站厅\n
+\n杭州，这座千年古都，历来是丝绸文化的发源地与传承地。如今，中国丝绸博物馆与杭州地铁携手，在武林门地铁站站厅，共同打造了一场别开生面的文化盛宴——“千载丝路不难逢：丝路上的吉祥纹样”主题展览，将传统丝绸文化与现代交通完美融合，为市民和游客带来视觉与文化的双重享受。"
+                android:textColor="@color/white" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+
+                android:layout_width="323dp"
+                android:layout_height="143dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="title"
+                android:scaleType="centerCrop"
+                android:src="@drawable/n2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="69dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="85dp"
+                android:layout_marginBottom="16dp"
+                android:text="走进3号线武林门地铁站站厅，仿佛置身于一个流光溢彩的丝绸世界。随着丝绸之路的发展，中西方文化日益交融，特别是在丝绸纹样方面。在墙面上，我们看到各个朝代精美的丝绸图案跃然眼前，南宋的折枝花绫、唐代的团窠奔鹿纹、清代的石榴花卉纹，无不彰显着中华丝绸文化的博大精深。这些艺术品以丰富的色彩和细腻的纹理，展示了丝绸在不同历史时期的演变和发展，彰显了丝绸之路在东西方文化交流中的深远影响，让人在匆匆的地铁换乘中，也能感受到浓厚的文化氛围。\n\n\n"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <include
+        layout="@layout/menu_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

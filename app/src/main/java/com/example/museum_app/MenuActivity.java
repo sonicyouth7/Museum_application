@@ -16,8 +16,7 @@ public class MenuActivity {
         ImageButton btnHistoire = activity.findViewById(R.id.histoire);
         ImageButton btnOeuvres = activity.findViewById(R.id.oeuvres);
         ImageButton btnHome = activity.findViewById(R.id.home);
-        ImageButton btnLocation = activity.findViewById(R.id.imageLocation);
-        ImageButton btnInfo = activity.findViewById(R.id.info);
+        ImageButton btnProfile = activity.findViewById(R.id.profile);
 
         //avec la méthode OnClickListener on definit les écuteurs d'événements pour les boutons
         btnHistoire.setOnClickListener(new View.OnClickListener() {
@@ -40,23 +39,16 @@ public class MenuActivity {
         btnHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(activity, MenuGeneral.class);
+                Intent intent = new Intent(activity, MuseumMenuActivity.class);
                 activity.startActivity(intent);
             }
         });
 
-        btnLocation.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(activity, MapActivity.class);
-                activity.startActivity(intent);
-            }
-        });
 
-        btnInfo.setOnClickListener(new View.OnClickListener() {
+        btnProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(activity, InfosActivity.class);
+                Intent intent = new Intent(activity, ProfileActivity.class);
                 activity.startActivity(intent);
             }
         });

@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.ImageButton;
 
 
-public class CarrouselActivity extends AppCompatActivity {
+public class GoodsActivity extends AppCompatActivity {
 
     private ImageButton tableau1, tableau2, morden1, morden2;
 
@@ -17,7 +17,7 @@ public class CarrouselActivity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.carrousel_activity);
+        setContentView(R.layout.goods_activity);
         MenuActivity.setupMenuButtons(this);
 
         tableau1 = findViewById(R.id.tableau1);
@@ -33,7 +33,7 @@ public class CarrouselActivity extends AppCompatActivity {
         tableau1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CarrouselActivity.this, OeuvreDescriptionActivity.class);
+                Intent intent = new Intent(GoodsActivity.this, OeuvreDescriptionActivity.class);
                 startActivity(intent);
             }
         });
@@ -57,7 +57,7 @@ public class CarrouselActivity extends AppCompatActivity {
         tableau2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CarrouselActivity.this, OeuvreDescriptionActivity.class);
+                Intent intent = new Intent(GoodsActivity.this, OeuvreDescriptionActivity.class);
                 startActivity(intent);
             }
         });
@@ -81,7 +81,7 @@ public class CarrouselActivity extends AppCompatActivity {
         morden1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CarrouselActivity.this, OeuvreDescriptionActivity.class);
+                Intent intent = new Intent(GoodsActivity.this, OeuvreDescriptionActivity.class);
                 startActivity(intent);
             }
         });
@@ -105,7 +105,7 @@ public class CarrouselActivity extends AppCompatActivity {
         morden2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CarrouselActivity.this, OeuvreDescriptionActivity.class);
+                Intent intent = new Intent(GoodsActivity.this, OeuvreDescriptionActivity.class);
                 startActivity(intent);
             }
         });

@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CarrouselActivity">
+    <ImageView
+        android:id="@+id/imagebackground"
+        android:layout_width="416dp"
+        android:layout_height="739dp"
+        android:contentDescription="@string/background_image_fail"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/login" />
+    <TextView
+        android:id="@+id/presentation_oeuvres"
+        style="@style/Museum_app_text"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:fontFamily="sans-serif"
+        android:text="藏品"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tableau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif"
+        android:text="中国历代"
+        android:textAlignment="center"
+        android:textColor="@color/backgroundcolor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/tableau_horizontalscroll"
+        android:layout_width="409dp"
+        android:layout_height="206dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableau">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageButton
+                android:id="@+id/tableau2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:contentDescription="tableau2"
+                android:onClick="handleSelection"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/past1" />
+
+            <ImageButton
+                android:id="@+id/dislike_tableau2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="22dp"
+                android:background="@null"
+                android:contentDescription="dislike_tableau2"
+                android:onClick="handleSelection"
+                app:layout_constraintEnd_toEndOf="@+id/tableau2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/dislike" />
+
+            <TextView
+                android:id="@+id/text_tableau2"
+                android:layout_width="184dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="16dp"
+                android:background="#DA042B76"
+                android:padding="5dp"
+                android:text="民国苎麻女衫裙"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/tableau2"
+                app:layout_constraintLeft_toLeftOf="@id/tableau2"
+                app:layout_constraintStart_toStartOf="@+id/tableau2" />
+
+            <ImageButton
+                android:id="@+id/tableau1"
+                android:contentDescription="tableau1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:onClick="handleSelection"
+                app:layout_constraintStart_toEndOf="@+id/tableau2"
+                app:layout_constraintTop_toTopOf="@+id/tableau2"
+                app:srcCompat="@drawable/past2" />
+
+            <ImageButton
+                android:id="@+id/dislike_tableau1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="22dp"
+                android:background="@null"
+                android:onClick="handleSelection"
+                android:contentDescription="dislike_tableau1"
+                app:layout_constraintEnd_toEndOf="@+id/tableau1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/dislike" />
+
+            <TextView
+                android:id="@+id/text_tableau1"
+                android:layout_width="184dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="16dp"
+                android:background="#DA042B76"
+                android:padding="5dp"
+                android:text="竹制扇套"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/tableau1"
+                app:layout_constraintLeft_toLeftOf="@id/tableau1"
+                app:layout_constraintStart_toStartOf="@+id/tableau1" />
+
+            <ImageButton
+                android:id="@+id/tableau3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:onClick="handleSelection"
+                app:layout_constraintStart_toEndOf="@+id/tableau1"
+                app:layout_constraintTop_toTopOf="@+id/tableau1"
+                app:srcCompat="@drawable/past3" />
+
+            <ImageButton
+                android:id="@+id/dislike_tableau3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="22dp"
+                android:background="@null"
+                android:onClick="handleSelection"
+                android:contentDescription="dislike_tableau3"
+                app:layout_constraintEnd_toEndOf="@+id/tableau3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/dislike" />
+
+            <TextView
+                android:id="@+id/text_tableau3"
+                android:layout_width="184dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="16dp"
+                android:background="#DA042B76"
+                android:padding="5dp"
+                android:text="羊皮女袄"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/tableau3"
+                app:layout_constraintLeft_toLeftOf="@id/tableau3"
+                app:layout_constraintStart_toStartOf="@+id/tableau3" />
+
+            <ImageButton
+                android:id="@+id/tableau4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:onClick="handleSelection"
+                app:layout_constraintStart_toEndOf="@+id/tableau3"
+                app:layout_constraintTop_toTopOf="@+id/tableau3"
+                app:srcCompat="@drawable/past4" />
+
+            <ImageButton
+                android:id="@+id/dislike_tableau4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="22dp"
+                android:background="@null"
+                android:onClick="handleSelection"
+                android:contentDescription="dislike_tableau4"
+                app:layout_constraintEnd_toEndOf="@+id/tableau4"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/dislike" />
+
+            <TextView
+                android:id="@+id/text_tableau4"
+                android:layout_width="184dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="16dp"
+                android:background="#DA042B76"
+                android:padding="5dp"
+                android:text="紫缎钉几何纹花边眉勒"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/tableau4"
+                app:layout_constraintLeft_toLeftOf="@id/tableau4"
+                app:layout_constraintStart_toStartOf="@+id/tableau4" />
+
+            <ImageButton
+                android:id="@+id/tableau5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:onClick="handleSelection"
+                app:layout_constraintStart_toEndOf="@+id/tableau4"
+                app:layout_constraintTop_toTopOf="@+id/tableau4"
+                app:srcCompat="@drawable/past5" />
+
+            <ImageButton
+                android:id="@+id/dislike_tableau5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="22dp"
+                android:background="@null"
+                android:onClick="handleSelection"
+                android:contentDescription="dislike_tableau5"
+                app:layout_constraintEnd_toEndOf="@+id/tableau5"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/dislike" />
+
+            <TextView
+                android:id="@+id/text_tableau5"
+                android:layout_width="184dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="16dp"
+                android:background="#DA042B76"
+                android:padding="5dp"
+                android:text="民国纸制月份广告画"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/tableau5"
+                app:layout_constraintLeft_toLeftOf="@id/tableau5"
+                app:layout_constraintStart_toStartOf="@+id/tableau5" />
+
+            <ImageButton
+                android:id="@+id/tableau6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:onClick="handleSelection"
+                app:layout_constraintStart_toEndOf="@+id/tableau5"
+                app:layout_constraintTop_toTopOf="@+id/tableau5"
+                app:srcCompat="@drawable/past6" />
+
+            <ImageButton
+                android:id="@+id/dislike_tableau6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="22dp"
+                android:background="@null"
+                android:onClick="handleSelection"
+                android:contentDescription="dislike_tableau6"
+                app:layout_constraintEnd_toEndOf="@+id/tableau6"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/dislike" />
+
+            <TextView
+                android:id="@+id/text_tableau6"
+                android:layout_width="184dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="16dp"
+                android:background="#DA042B76"
+                android:padding="5dp"
+                android:text="民国恒丰纺织股份有限公司股票"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/tableau6"
+                app:layout_constraintLeft_toLeftOf="@id/tableau6"
+                app:layout_constraintStart_toStartOf="@+id/tableau6" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+
+
+    <TextView
+        android:id="@+id/morden"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:fontFamily="sans-serif"
+        android:text="中国当代"
+        android:textAlignment="center"
+        android:textColor="@color/backgroundcolor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tableau"
+        app:layout_constraintTop_toBottomOf="@+id/tableau_horizontalscroll" />
+
+    <HorizontalScrollView
+        android:id="@+id/morden_horizontalscroll"
+        android:layout_width="409dp"
+        android:layout_height="206dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/morden">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageButton
+                android:id="@+id/morden1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:contentDescription="morden1"
+                android:onClick="handleSelection"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/morden1" />
+
+            <ImageButton
+                android:id="@+id/dislike_morden1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="22dp"
+                android:background="@null"
+                android:contentDescription="dislike_morden1"
+                android:onClick="handleSelection"
+                app:layout_constraintEnd_toEndOf="@+id/morden1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/dislike" />
+
+            <TextView
+                android:id="@+id/text_morden1"
+                android:layout_width="184dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="16dp"
+                android:background="#DA042B76"
+                android:padding="5dp"
+                android:text="仿清代雍正真金海水江崖九龙妆花缎龙袍"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/morden1"
+                app:layout_constraintLeft_toLeftOf="@id/morden1"
+                app:layout_constraintStart_toStartOf="@+id/morden1" />
+
+            <ImageButton
+                android:id="@+id/morden2"
+                android:contentDescription="morden2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:onClick="handleSelection"
+                app:layout_constraintStart_toEndOf="@+id/morden1"
+                app:layout_constraintTop_toTopOf="@+id/morden1"
+                app:srcCompat="@drawable/morden2" />
+
+            <ImageButton
+                android:id="@+id/dislike_morden2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="22dp"
+                android:background="@null"
+                android:contentDescription="dislike_morden2"
+                android:onClick="handleSelection"
+                app:layout_constraintEnd_toEndOf="@+id/morden2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/dislike" />
+
+
+            <TextView
+                android:id="@+id/text_morden2"
+                android:layout_width="184dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="16dp"
+                android:background="#DA042B76"
+                android:padding="5dp"
+                android:text="胡社光：像芭比娃娃一样生活"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/morden2"
+                app:layout_constraintLeft_toLeftOf="@id/morden2"
+                app:layout_constraintStart_toStartOf="@+id/morden2" />
+
+            <ImageButton
+                android:id="@+id/morden3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:onClick="handleSelection"
+                app:layout_constraintStart_toEndOf="@+id/morden2"
+                app:layout_constraintTop_toTopOf="@+id/morden2"
+                app:srcCompat="@drawable/morden3" />
+
+            <ImageButton
+                android:id="@+id/dislike_morden3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="22dp"
+                android:background="@null"
+                android:onClick="handleSelection"
+                android:contentDescription="dislike_morden3"
+                app:layout_constraintEnd_toEndOf="@+id/morden3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/dislike" />
+
+            <TextView
+                android:id="@+id/text_morden3"
+                android:layout_width="184dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="16dp"
+                android:background="#DA042B76"
+                android:padding="5dp"
+                android:text="陈巧燕：天女散花"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/morden3"
+                app:layout_constraintLeft_toLeftOf="@id/morden3"
+                app:layout_constraintStart_toStartOf="@+id/morden3" />
+
+            <ImageButton
+                android:id="@+id/morden4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:onClick="handleSelection"
+                app:layout_constraintStart_toEndOf="@+id/morden3"
+                app:layout_constraintTop_toTopOf="@+id/morden3"
+                app:srcCompat="@drawable/morden4" />
+
+            <ImageButton
+                android:id="@+id/dislike_morden4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="22dp"
+                android:background="@null"
+                android:onClick="handleSelection"
+                android:contentDescription="dislike_morden4"
+                app:layout_constraintEnd_toEndOf="@+id/morden4"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/dislike" />
+
+            <TextView
+                android:id="@+id/text_morden4"
+                android:layout_width="184dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="16dp"
+                android:background="#DA042B76"
+                android:padding="5dp"
+                android:text="陈巧燕：倾城之恋"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="5sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/morden4"
+                app:layout_constraintLeft_toLeftOf="@id/morden4"
+                app:layout_constraintStart_toStartOf="@+id/morden4" />
+
+
+            <ImageButton
+                android:id="@+id/morden5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:onClick="handleSelection"
+                app:layout_constraintStart_toEndOf="@+id/morden4"
+                app:layout_constraintTop_toTopOf="@+id/morden4"
+                app:srcCompat="@drawable/morden5" />
+
+            <ImageButton
+                android:id="@+id/dislike_morden5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="22dp"
+                android:background="@null"
+                android:onClick="handleSelection"
+                android:contentDescription="dislike_morden5"
+                app:layout_constraintEnd_toEndOf="@+id/morden5"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/dislike" />
+
+            <TextView
+                android:id="@+id/text_morden5"
+                android:layout_width="184dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="16dp"
+                android:background="#DA042B76"
+                android:padding="5dp"
+                android:text="傅蓝月：海上旧梦"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/morden5"
+                app:layout_constraintLeft_toLeftOf="@id/morden5"
+                app:layout_constraintStart_toStartOf="@+id/morden5" />
+
+
+            <ImageButton
+                android:id="@+id/morden6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:onClick="handleSelection"
+                app:layout_constraintStart_toEndOf="@+id/morden5"
+                app:layout_constraintTop_toTopOf="@+id/morden5"
+                app:srcCompat="@drawable/morden6" />
+
+            <ImageButton
+                android:id="@+id/dislike_morden6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="22dp"
+                android:background="@null"
+                android:onClick="handleSelection"
+                android:contentDescription="dislike_morden6"
+                app:layout_constraintEnd_toEndOf="@+id/morden6"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/dislike" />
+
+            <TextView
+                android:id="@+id/text_morden6"
+                android:layout_width="184dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="16dp"
+                android:background="#DA042B76"
+                android:padding="5dp"
+                android:text="王汁（Uma Wang）：质感药方"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/morden6"
+                app:layout_constraintLeft_toLeftOf="@id/morden6"
+                app:layout_constraintStart_toStartOf="@+id/morden6" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+
+    <include
+        layout="@layout/menu_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -24,17 +24,13 @@
         app:srcCompat="@drawable/home_icon"
         android:contentDescription="@string/home_button" />
 
-    <ImageButton
-        android:id="@+id/imageLocation"
-        style="@style/Menu_button"
-        app:srcCompat="@drawable/localisation_icon"
-        android:contentDescription="@string/location_button" />
+
 
     <ImageButton
-        android:id="@+id/info"
+        android:id="@+id/profile"
         style="@style/Menu_button"
-        app:srcCompat="@drawable/info_icon"
-        android:contentDescription="@string/info_button" />
+        app:srcCompat="@drawable/profile_icon"
+        android:contentDescription="@string/button_profile" />
 
 </LinearLayout>
 

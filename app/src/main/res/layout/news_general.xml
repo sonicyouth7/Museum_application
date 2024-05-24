@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/MenuGenral"
+        style="@style/Museum_app_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="馆内新闻"
+        android:textIsSelectable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/boutonHistoires"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:drawablePadding="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/news1" />
+
+
+
+    <ImageButton
+        android:id="@+id/boutonOeuvres"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:drawablePadding="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/news2" />
+
+    <ImageButton
+        android:id="@+id/boutonLocalisation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:drawablePadding="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/news3" />
+
+    <ImageButton
+        android:id="@+id/boutonInfos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:drawablePadding="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/news4" />
+    <include
+        layout="@layout/menu_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</LinearLayout>

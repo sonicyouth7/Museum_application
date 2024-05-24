@@ -55,7 +55,7 @@ public class MuseumMenuActivity extends AppCompatActivity {
             NewsButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(MuseumMenuActivity.this, MenuGeneral.class);
+                    Intent intent = new Intent(MuseumMenuActivity.this, NewsGeneral.class);
                     startActivity(intent);
                 }
             });
@@ -71,7 +71,7 @@ public class MuseumMenuActivity extends AppCompatActivity {
              goodsButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(MuseumMenuActivity.this, MenuGeneral.class);
+                    Intent intent = new Intent(MuseumMenuActivity.this, GoodsActivity.class);
                     startActivity(intent);
                 }
             });

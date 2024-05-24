@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Museum_app</string>
+    <string name="app_name">Museum_Silk</string>
     <string name="background_image_fail">Background image</string>
     <string name="user">账号</string>
     <string name="logo">Logo</string>
@@ -12,14 +12,11 @@
     <string name="profile_image">profile image</string>
     <string name="settings">设置</string>
     <string name="Museum_menu">中国丝绸博物馆</string>
-    <string name="mus_e_louvre">正在展出</string>
-    <string name="mus_e_d_orsay">馆内新闻</string>
-    <string name="petit_palais">Petit Palais</string>
     <string name="news">news</string>
     <string name="goods">藏品</string>
     <string name="products">文创</string>
     <string name="mus_e_d_histoire">Musée d\'Histoire</string>
-    <string name="button_du_profile">Button du profile</string>
+    <string name="button_profile">Button profile</string>
     <string name="back_button">Back Button</string>
     <string name="histoire_button">Histoire Button</string>
     <string name="home_button">Home Button</string>
