@@ -5,24 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white">
-
-    <ImageButton
-        android:id="@+id/histoire"
-        style="@style/Menu_button"
-        app:srcCompat="@drawable/history_icon"
-        android:contentDescription="@string/histoire_button" />
-
-    <ImageButton
-        android:id="@+id/oeuvres"
-        style="@style/Menu_button"
-        app:srcCompat="@drawable/oeuvre_icon"
-        android:contentDescription="@string/oeuvres_button" />
-
     <ImageButton
         android:id="@+id/home"
         style="@style/Menu_button"
         app:srcCompat="@drawable/home_icon"
         android:contentDescription="@string/home_button" />
+    <ImageButton
+        android:id="@+id/info"
+        style="@style/Menu_button"
+        app:srcCompat="@drawable/history_icon"
+        android:contentDescription="@string/info_button" />
+
+    <ImageButton
+        android:id="@+id/goods_btn"
+        style="@style/Menu_button"
+        app:srcCompat="@drawable/oeuvre_icon"
+        android:contentDescription="goods" />
+
+
 
 
 

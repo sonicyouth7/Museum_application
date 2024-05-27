@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/login"
     android:orientation="horizontal">
 
     <TextView
@@ -14,7 +15,7 @@
         android:layout_height="35dp"
         android:layout_marginTop="0dp"
         android:gravity="center"
-        android:text="Informations"
+        android:text="开放时间"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,21 +25,20 @@
         android:id="@+id/Horaires"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="48dp"
-        android:text="Horaires"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="44dp"
+        android:text="中国丝绸博物馆开放时间调整"
         android:textAllCaps="true"
-        android:textColor="#DA042B76"
+        android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title"
         tools:ignore="MissingConstraints" />
 
-
     <LinearLayout
         android:id="@+id/horaires_container"
-        android:layout_width="wrap_content"
+        android:layout_width="376dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:background="@drawable/rectangle_with_shadow"
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
-            android:text="9h - 18h"
+            android:text="尊敬的观众朋友们："
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/Horaires"
@@ -66,58 +66,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
-            android:text="Lundi, mercredi, jeudi, samedi et dimanche"
+            android:text="周二至周日9:00-17:00（16:30停止入馆）\n周一全天闭馆（国家法定节假日不闭馆，正常开放"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="@+id/Heures_norm"
             app:layout_constraintStart_toEndOf="@+id/Heures_norm"
             app:layout_constraintTop_toTopOf="@+id/Heures_norm"
             tools:ignore="MissingConstraints" />
 
-        <TextView
-            android:id="@+id/Heures_vendredi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:text="  9h - 21h45"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/Heures_norm"
-            app:layout_constraintTop_toBottomOf="@+id/Heures_norm"
-            tools:ignore="UnknownId" />
+
 
         <TextView
             android:id="@+id/Ferme_mardi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
-            android:text="Mardi"
+            android:text="观众可提前7天（包含预约当天）登录中国丝绸博物馆微信公众号进行参观预约。"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/Fermeture"
             app:layout_constraintStart_toEndOf="@+id/Fermeture"
             app:layout_constraintTop_toTopOf="@+id/Fermeture"
             app:layout_constraintVertical_bias="0.0" />
 
-        <TextView
-            android:id="@+id/Fermeture"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="FERMETURE"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/Heures_vendredi"
-            app:layout_constraintTop_toBottomOf="@+id/Heures_vendredi" />
 
-        <TextView
-            android:id="@+id/Vendredi"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="28dp"
-            android:text="Vendredi"
-            android:textSize="18sp"
-            app:layout_constraintStart_toEndOf="@+id/Heures_vendredi"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="198dp" />
 
     </LinearLayout>
 
@@ -125,22 +95,22 @@
         android:id="@+id/Tarifs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="312dp"
-        android:text="Tarifs"
+        android:layout_marginEnd="296dp"
+        android:text="预约方式"
         android:textAllCaps="true"
-        android:textColor="#DA042B76"
+        android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/tarifs_container"
         app:layout_constraintEnd_toEndOf="@+id/tarifs_container"
         app:layout_constraintTop_toBottomOf="@+id/Horaires"
-        app:layout_constraintVertical_bias="0.946" />
+        app:layout_constraintVertical_bias="0.908" />
 
     <LinearLayout
         android:id="@+id/tarifs_container"
         android:layout_width="373dp"
-        android:layout_height="224dp"
-        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
         android:background="@drawable/rectangle_with_shadow"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/include"
@@ -152,7 +122,7 @@
             android:id="@+id/Tarifs_online"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="15 €"
+            android:text="一"
             android:textSize="20sp"
             android:textStyle="bold"
             tools:ignore="MissingConstraints"
@@ -165,16 +135,16 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginLeft="20dp"
-            android:text="@string/reserve_now"
-            android:textStyle="italic"
-            android:textSize="18sp"
+            android:onClick="onReserveNowClick"
+            android:text="我馆实行分时段实名预约参观\n暂不接受团队参观"
             android:textColorLink="#DA042B76"
+            android:textSize="18sp"
+            android:textStyle="italic"
             app:layout_constraintBottom_toBottomOf="@+id/Tarifs_online"
             app:layout_constraintStart_toEndOf="@+id/Tarifs_online"
             app:layout_constraintTop_toTopOf="@+id/Tarifs_online"
             app:layout_constraintVertical_bias="1.0"
-            tools:ignore="MissingConstraints"
-            android:onClick="onReserveNowClick"/>
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/Tarifs_sur_place"
@@ -182,7 +152,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
             android:layout_marginLeft="4dp"
-            android:text="17 €"
+            android:text="二"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="@+id/Tarifs_online"
@@ -194,35 +164,12 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
-            android:text="Tarif sur place"
+            android:text="观众可进入“中国丝绸博物馆”微信公众号进行预约。"
             android:textSize="18sp"
             app:layout_constraintStart_toEndOf="@+id/Tarifs_sur_place"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteY="445dp" />
 
-        <TextView
-            android:id="@+id/Gratuit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:layout_marginLeft="4dp"
-            android:layout_marginTop="20dp"
-            android:text="GRATUIT"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/Tarifs_sur_place"
-            app:layout_constraintTop_toBottomOf="@+id/Tarifs_sur_place" />
-
-        <TextView
-            android:id="@+id/Moins_de_26_ans"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="de - 18 ans à 26 ans"
-            android:textSize="18dp"
-            app:layout_constraintStart_toEndOf="@+id/Gratuit"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="421dp" />
 
     </LinearLayout>
 

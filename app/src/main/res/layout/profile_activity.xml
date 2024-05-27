@@ -55,7 +55,7 @@
         android:layout_height="116dp"
         android:layout_marginTop="28dp"
         android:contentDescription="profile_image"
-        android:src="@drawable/title"
+        android:src="@drawable/avatar"
         app:civ_border_color="@color/backgroundcolor"
         app:civ_border_width="1dp"
         app:layout_constraintEnd_toEndOf="parent"

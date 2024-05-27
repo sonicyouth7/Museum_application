@@ -2,6 +2,7 @@ package com.example.museum_app;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -13,8 +14,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MuseumMenuActivity extends AppCompatActivity {
         private ImageView backButton, profileButton;
-        private ImageButton NewsButton, showingButton, goodsButton,productsButton;
-        private CheckBox checkBox1, checkBox2, checkBox3, checkBox4, checkBox5;
+        private ImageButton NewsButton, showingButton;
+
 
     @Override
         protected void onCreate(Bundle savedInstanceState) {
@@ -23,17 +24,10 @@ public class MuseumMenuActivity extends AppCompatActivity {
 //chercher les boutons avec findViewById
             profileButton = findViewById(R.id.ProfileButton);
             backButton = findViewById(R.id.backButton);
-
             NewsButton = findViewById(R.id.NewsButton);
             showingButton = findViewById(R.id.showing);
-            goodsButton = findViewById(R.id.goods);
-            productsButton = findViewById(R.id.products);
-            checkBox2 = findViewById(R.id.checkBox2);
-            checkBox3 = findViewById(R.id.checkBox3);
-            checkBox4 = findViewById(R.id.checkBox4);
-            checkBox5 = findViewById(R.id.checkBox5);
 
-
+        setupMenuButtons();
 //bouton Back pour aller à la page d'avant avec modèl onBackPressed
             backButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,56 +57,52 @@ public class MuseumMenuActivity extends AppCompatActivity {
              showingButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(MuseumMenuActivity.this, MenuGeneral.class);
+                    Intent intent = new Intent(MuseumMenuActivity.this, InfosActivity.class);
                     startActivity(intent);
                 }
             });
+        }
+    private void setupMenuButtons() {
+        ImageButton btnHome = findViewById(R.id.home);
+        ImageButton btnProfile = findViewById(R.id.profile);
+        ImageButton btninfo = findViewById(R.id.info);
+        ImageButton btnGoods = findViewById(R.id.goods_btn);
 
-             goodsButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(MuseumMenuActivity.this, GoodsActivity.class);
-                    startActivity(intent);
-                }
-            });
-        productsButton.setOnClickListener(new View.OnClickListener() {
+
+        btnHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MuseumMenuActivity.this, MenuGeneral.class);
+                Log.d("ProfileActivity", "Home button clicked");
+                Intent intent = new Intent(MuseumMenuActivity.this, MuseumMenuActivity.class);
                 startActivity(intent);
             }
         });
 
+        btnProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d("ProfileActivity", "Profile button clicked");
+                Intent intent = new Intent(MuseumMenuActivity.this, ProfileActivity.class);
+                startActivity(intent);
+            }
+        });
 
+        btninfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d("ProfileActivity", "info button clicked");
+                Intent intent = new Intent(MuseumMenuActivity.this, InfosActivity.class);
+                startActivity(intent);
+            }
+        });
 
-            checkBox2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
-
-                }
-            });
-
-            checkBox3.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
-                }
-            });
-
-            checkBox4.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
-                }
-            });
-
-            checkBox5.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-                @Override
-                public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
-                }
-            });
-
-
-
-
-
-        }
+        btnGoods.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d("ProfileActivity", "Oeuvres button clicked");
+                Intent intent = new Intent(MuseumMenuActivity.this, GoodsActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
     }

@@ -48,7 +48,7 @@ public class LoginActivity extends AppCompatActivity {
                 }
 
                 // 假设验证成功，跳转到主界面
-                if (username.equals("test") && password.equals("1234")) {
+                if (username.equals("1") && password.equals("1")) {
                     Toast.makeText(LoginActivity.this, "登录成功", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(LoginActivity.this, MuseumMenuActivity.class);
                     startActivity(intent);
